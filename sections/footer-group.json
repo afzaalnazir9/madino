@@ -1,0 +1,212 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "ss_footer_3_RJdyVr": {
+      "type": "ss-footer-3",
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/modino_f6b3cd15-03a1-4570-b0c0-6858cc3dc207.png",
+        "logo_width": 200,
+        "logo_width_mobile": 200,
+        "first_menu_title": "תפריט האתר",
+        "first_menu": "",
+        "second_menu_title": "מידע שימושי",
+        "second_menu": "link-list",
+        "third_menu_title": "פוליסות",
+        "third_menu": "123",
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 16,
+        "title_size_mobile": 16,
+        "title_height": 130,
+        "link_custom": true,
+        "link_font": "josefin_sans_n4",
+        "link_size": 16,
+        "link_size_mobile": 16,
+        "link_height": 200,
+        "social_text": "<h3>עקבו אחרנו!<\/h3>",
+        "social_text_custom": false,
+        "social_text_font": "josefin_sans_n4",
+        "social_text_size": 24,
+        "social_text_size_mobile": 20,
+        "social_text_height": 130,
+        "twitter": "",
+        "facebook": "",
+        "linkedin": "",
+        "instagram": "https:\/\/www.instagram.com\/modino_il\/?next=%2F",
+        "youtube": "",
+        "pinterest": "",
+        "whatsapp": "https:\/\/wa.me\/972556846219?text=%D7%94%D7%99%D7%99!",
+        "tiktok": "https:\/\/www.tiktok.com\/@modino_il?_t=8kktCRMN94T&_r=1",
+        "social_icon": 25,
+        "social_icon_mobile": 25,
+        "title": "",
+        "main_title_custom": false,
+        "main_title_font": "josefin_sans_n4",
+        "main_title_size": 16,
+        "main_title_size_mobile": 16,
+        "main_title_height": 130,
+        "text": "",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 12,
+        "text_size_mobile": 12,
+        "text_height": 200,
+        "use_payments": true,
+        "copy": "<p>@2024 כל הזכויות שמורות למודינו<\/p>",
+        "copy_custom": false,
+        "copy_font": "josefin_sans_n4",
+        "copy_size": 13,
+        "copy_size_mobile": 13,
+        "copy_height": 130,
+        "use_newsletter": true,
+        "input_padding_vertical": 14,
+        "input_padding_horizontal": 10,
+        "input_radius": 6,
+        "input_border_thickness": 1,
+        "input_placeholder": "Email",
+        "input_custom": false,
+        "input_font": "josefin_sans_n4",
+        "input_size": 16,
+        "input_size_mobile": 16,
+        "input_height": 100,
+        "submit": "הצטרפו",
+        "submit_custom": false,
+        "submit_font": "josefin_sans_n4",
+        "submit_size": 16,
+        "submit_size_mobile": 16,
+        "submit_height": 100,
+        "submit_padding_vertical": 16,
+        "submit_padding_horizontal": 16,
+        "submit_radius": 6,
+        "submit_border_thickness": 0,
+        "input_border_color": "#ffffff",
+        "input_color": "#ffffff",
+        "input_placeholder_color": "#ffffff",
+        "submit_color": "#ffffff",
+        "submit_hover_color": "#ffffff",
+        "submit_bg_color": "#ffdc2a",
+        "submit_bg_hover_color": "#121212",
+        "submit_border_color": "#000000",
+        "submit_border_hover_color": "#000000",
+        "social_text_color": "#ffffff",
+        "social_text_link_color": "#ffffff",
+        "social_icon_color": "#ffffff",
+        "title_color": "#ffffff",
+        "link_color": "#ffffff",
+        "link_hover_color": "#ffffff",
+        "text_color": "#ffffff",
+        "main_title_color": "#ffffff",
+        "copy_color": "#ffffff",
+        "footer_border_color": "#fafafa",
+        "background_color": "#1d193f",
+        "background_gradient": "linear-gradient(180deg, rgba(29, 25, 63, 1), rgba(37, 27, 63, 1) 27%, rgba(44, 29, 63, 1) 44%, rgba(50, 30, 63, 1) 63%, rgba(73, 24, 67, 1) 98%)",
+        "border_color": "#f41e6b",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 160,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "newsletter_cBAKwH": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_dfXN4t": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>שווה להיות חברים שלנו<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_ajQUN3": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>קודם כל כי יש לנו צעצועים יחודיים, אבל גם כי אנחנו מפנקים בהנחות שוות<\/p>"
+          }
+        },
+        "email_form_NPGK9j": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_dfXN4t",
+        "paragraph_ajQUN3",
+        "email_form_NPGK9j"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "cf5bfb75-bebf-472a-91a0-143e3ea6c6d7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/modino_f6b3cd15-03a1-4570-b0c0-6858cc3dc207.png",
+            "image_width": 145,
+            "alignment": "center"
+          }
+        },
+        "7d18fbef-0694-42c3-b759-b2383e8fed06": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": "<h1>תפריט אתר<\/h1><h4><a href=\"\/policies\/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">מדיניות פרטיות<\/a><\/h4><h4><a href=\"\/policies\/terms-of-service\" title=\"Terms of Service\">תנאי השירות<\/a><\/h4><h4><a href=\"\/policies\/refund-policy\" title=\"Refund Policy\">מדיניות החזרים<\/a><\/h4><h4><a href=\"\/pages\/מדיניות-משלוחים\" target=\"_blank\" title=\"מדיניות משלוחים\">מדיניות משלוחים<\/a><\/h4>"
+          }
+        },
+        "link_list_cEh9ej": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "brand_information_xVxdTJ": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "cf5bfb75-bebf-472a-91a0-143e3ea6c6d7",
+        "7d18fbef-0694-42c3-b759-b2383e8fed06",
+        "link_list_cEh9ej",
+        "brand_information_xVxdTJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": false,
+        "newsletter_heading": "<strong>הירשם לקבלת 20% הנחה<\/strong>",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "ss_footer_3_RJdyVr",
+    "newsletter_cBAKwH",
+    "footer"
+  ]
+}

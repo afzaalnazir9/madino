@@ -1,0 +1,455 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "5dcaae4e-bb5b-4249-b733-8117a154ca60": {
+          "type": "text",
+          "settings": {
+            "text": "⭐️⭐️⭐️⭐️⭐️מעל ל-5,000 לקוחות מרוצים!",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "9c95162a-4488-473a-860f-3b85aab21363": {
+          "type": "text",
+          "settings": {
+            "text": "🙌 מתאים לכולם",
+            "text_style": "body"
+          }
+        },
+        "473970a4-e61d-4a3f-af1f-4b8018c1c889": {
+          "type": "text",
+          "settings": {
+            "text": "🤯 משפר את היצירתיות",
+            "text_style": "body"
+          }
+        },
+        "2c79532f-67f6-4ad0-aed7-f51890959124": {
+          "type": "text",
+          "settings": {
+            "text": "💡 מפתח את החשיבה",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "vitals_ub_volume_discounts_4Jnxjt": {
+          "type": "shopify:\/\/apps\/vitals\/blocks\/ub-volume-discounts\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "83ca906c-1e61-4d33-9d2c-3c1104202046": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "איך זה עובד?",
+            "icon": "question_mark",
+            "content": "<p>הקובייה בנויה מ36 מגנטים מיוחדים שמאפשרים ליצור יותר כ-70 צורות שונות שיאתגרו ויפתחו את היצירתיות שבכם. <\/p><p>שלבו קוביות נוספות וצרו אינספור צורות ועיצובים מטורפים!<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "7f3613eb-db3d-4bdc-9593-ffec1b70f831": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "תוך כמה זמן המשלוח יגיע?",
+            "icon": "truck",
+            "content": "<p>המשלוח יגיע בין 5 עד 25 ימי עסקים אליכם הביתה.<\/p><p>ייתכן ויהיו קצת עיכובים עקב המצב במדינה, נעשה הכל כדאי אליכם מהר ככל האפשר.<\/p><p>אנא שמרו על סבלנותכם.<\/p>",
+            "page": ""
+          }
+        },
+        "c45b8881-7122-43fd-ab8e-838f0cf71183": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "למה מודינו?",
+            "icon": "clipboard",
+            "content": "<p>מודינו היא טיפול טבעית לבעיות הקשב והריכוז, היא מעסיקה את המוח והידיים בצורה מאתגרת ובו זמנית עוזרת לשמור על ריכוז. <\/p><p>כך שתוכלו להימנע מתופעות הלוואי של הטיפולים הכימיים הקיימים בשוק ובו זמנית לפתח את המוח והיצירתיות שבכם.<\/p><p>בנוסף ובעיננו הכי חשוב מודינו היא חנות חברתית שתורמת חלק מהכנסותיה למשפחות קשות יום כך שתוכלו לתרום את חלקכם בכל קניה.<\/p><p><\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "3af219d2-224f-4c68-9d13-4f89dfdbb74d": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "למי זה מתאים?",
+            "icon": "heart",
+            "content": "<ul><li>מודינו מתאימה לכל מי שמחפש דרך לתת לדמיון שלו לפרוח.<\/li><li>למי שסובל מבעיות קשב וריכוז ונמאס לו מתופעות הלוואי של התרופות הקיימות בשוק.<\/li><li>למי שמחפש ונמשך לאתגרים<\/li><li>למי שמחפש מתנה מקורית ויוצאת דופן שהיא גם חינוכית וגם מפתחת את החשיבה והיצירתיות. <\/li><li>למי שמעוניין לשדרג את שולחן העבודה בצעצוע חדש.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "icon_with_text_w7cmDe": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "heart",
+            "heading_1": "שירות מקצועי ומהיר",
+            "icon_2": "shirt",
+            "heading_2": "מעל 5,000 לקוחות מרוצים!",
+            "icon_3": "clipboard",
+            "heading_3": "14 ימי אחריות"
+          }
+        },
+        "collapsible_tab_GYKXVX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "תוך כמה זמן המשלוח שלי מגיע?",
+            "icon": "truck",
+            "content": "<p>זמן המשלוח הוא <strong>בד\"כ <\/strong>5-14 ימי עסקים. ייתכן ויהיו עיכובים בגלל המצב הביטחוני במדינה, עם ישראל חי!<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "5dcaae4e-bb5b-4249-b733-8117a154ca60",
+        "title",
+        "price",
+        "9c95162a-4488-473a-860f-3b85aab21363",
+        "473970a4-e61d-4a3f-af1f-4b8018c1c889",
+        "2c79532f-67f6-4ad0-aed7-f51890959124",
+        "variant_picker",
+        "vitals_ub_volume_discounts_4Jnxjt",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "83ca906c-1e61-4d33-9d2c-3c1104202046",
+        "7f3613eb-db3d-4bdc-9593-ffec1b70f831",
+        "c45b8881-7122-43fd-ab8e-838f0cf71183",
+        "3af219d2-224f-4c68-9d13-4f89dfdbb74d",
+        "icon_with_text_w7cmDe",
+        "collapsible_tab_GYKXVX"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-3b990cbc-d370-4b8e-96f6-7110226ea607",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail",
+        "media_position": "right",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 12,
+        "padding_bottom": 32
+      }
+    },
+    "rich_text_dAxQ4U": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qYKMaH": {
+          "type": "heading",
+          "settings": {
+            "heading": "תשכחו מכל ספינר שהכרתם לפני!",
+            "heading_size": "h1"
+          }
+        },
+        "text_yPmRHL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>מחפשים דרך מקורית בשביל ילדכם לשלב זמן משחק מהנה תוך למידה מאתגרת ופיתוח של החשיבה?<\/p><p>תכירו את ספינר הקסם של מודינו!<\/p>"
+          }
+        },
+        "button_pi84ic": {
+          "type": "button",
+          "settings": {
+            "button_label": "אודותינו📖",
+            "button_link": "shopify:\/\/pages\/אודותינו",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qYKMaH",
+        "text_yPmRHL",
+        "button_pi84ic"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_QwXnjB": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VideoToGif_GIF_863425ec-3de2-477f-8ef7-0a903c3f6b2c.gif",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_HURHFW": {
+      "type": "image-banner",
+      "custom_css": [
+        ".banner__media.media {background-color: transparent;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/67315dbea43776bfbfd6b91b3f80200d.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_GFgrUV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CCkdrw": {
+          "type": "heading",
+          "settings": {
+            "heading": "איך זה עובד?",
+            "heading_size": "h1"
+          }
+        },
+        "text_m6arYh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ספינר קסם של מודינו מכיל 18 כדורים בצבעים שונים.<br\/>מה שעליכם לעשות הוא להצליח שבכל שורה יהיה גוון אחיד של צבעים באמצעות סיבובים אסטרטגיים הדורשים להפעיל את המחשבה היצירתיות שבכם.<br\/>משחק מחשבה המותאם לפעילות בכל עת.<br\/>כך שהקטנטנים ירכשו מיומנויות של מחשבה, יצירתיות וזריזות תוך כדי משחק מהנה וכיפי במיוחד.<br\/>מאתגרים, נהנים , לומדים ומתפתחים באמצעות ספינר הקסם החדשני של מודינו!<\/p>"
+          }
+        },
+        "button_miKgTP": {
+          "type": "button",
+          "settings": {
+            "button_label": "יצירת קשר📞",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CCkdrw",
+        "text_m6arYh",
+        "button_miKgTP"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_FEykQY": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VideoToGif_GIF_9ad7bd58-a81d-4526-aadf-1e07f4c9b431.gif",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_yLR39A": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xFiXiy": {
+          "type": "heading",
+          "settings": {
+            "heading": "כנראה שתאהבו גם...",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xFiXiy"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "ss_circle_menu_xCEdW7": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_nffEqg": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/9cd25606186b8b98a9f4f39b9fcf2f05.png",
+            "bubble_text": "קוביית הקסם",
+            "bubble_link": "shopify:\/\/products\/קוביית-הקסם"
+          }
+        },
+        "image_Yq4XDK": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2024-05-20165331.png",
+            "bubble_text": "פרח הלגו",
+            "bubble_link": "shopify:\/\/products\/פרח-לגו"
+          }
+        },
+        "image_nJcrzX": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2024-04-22120855.png",
+            "bubble_text": "כדור הקסם המעופף",
+            "bubble_link": "shopify:\/\/products\/כדור-הקסם-המעופף"
+          }
+        },
+        "image_iWNecV": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2024-05-26122614.png",
+            "bubble_text": "כדור החלל",
+            "bubble_link": "shopify:\/\/products\/מודינו-כדור-חלל"
+          }
+        }
+      },
+      "block_order": [
+        "image_nffEqg",
+        "image_Yq4XDK",
+        "image_nJcrzX",
+        "image_iWNecV"
+      ],
+      "settings": {
+        "slider_width": 100,
+        "slider_gap": 16,
+        "slider_gap_mobile": 24,
+        "icon_size": 140,
+        "icon_size_mobile": 126,
+        "icon_space": 0,
+        "icon_space_mobile": 0,
+        "icon_border_thickness": 0,
+        "icon_square": false,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 20,
+        "text_size_mobile": 18,
+        "text_height": 130,
+        "text_mt": 8,
+        "icon_border_color": "#ffffff",
+        "icon_border_gradient": "",
+        "text_color": "#ffffff",
+        "background_color": "#1d193f",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "border_gradient": "",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 150,
+        "border_thickness": 0,
+        "lazy": true,
+        "hide_mobile": false,
+        "hide_desktop": false
+      }
+    },
+    "170349922327f3e7dc": {
+      "type": "apps",
+      "blocks": {
+        "6f4c5158-a4fa-4d1b-8868-4f9986222da5": {
+          "type": "shopify:\/\/apps\/vitals\/blocks\/product-reviews\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "6f4c5158-a4fa-4d1b-8868-4f9986222da5"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_dAxQ4U",
+    "image_banner_QwXnjB",
+    "image_banner_HURHFW",
+    "rich_text_GFgrUV",
+    "image_banner_FEykQY",
+    "rich_text_yLR39A",
+    "ss_circle_menu_xCEdW7",
+    "170349922327f3e7dc",
+    "related-products"
+  ]
+}

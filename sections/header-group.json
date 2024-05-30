@@ -1,0 +1,68 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "5e10eccb-577c-46a1-90ce-7149857407d6": {
+      "type": "announcement-bar",
+      "blocks": {
+        "sections--17180064153858__5e10eccb-577c-46a1-90ce-7149857407d6-announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "text": "יעיל בהפחתת לחץ וחרדה!",
+            "link": ""
+          }
+        },
+        "beb69167-2555-459c-8764-17d1983b08ba": {
+          "type": "announcement",
+          "settings": {
+            "text": "20% מסך ההכנסות מועברות לנפגעי המלחמה",
+            "link": ""
+          }
+        },
+        "926b981c-43e5-4d90-9115-57b0a2c42e9b": {
+          "type": "announcement",
+          "settings": {
+            "text": "משלוח חינם ברכישת יותר משתי קובייות!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "sections--17180064153858__5e10eccb-577c-46a1-90ce-7149857407d6-announcement-1",
+        "beb69167-2555-459c-8764-17d1983b08ba",
+        "926b981c-43e5-4d90-9115-57b0a2c42e9b"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "show_line_separator": false,
+        "show_social": false,
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-center",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "reduce-logo-size",
+        "show_line_separator": false,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-1",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    }
+  },
+  "order": [
+    "5e10eccb-577c-46a1-90ce-7149857407d6",
+    "header"
+  ]
+}

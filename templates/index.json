@@ -1,0 +1,672 @@
+{
+  "sections": {
+    "image_banner_KQpeiK": {
+      "type": "image-banner",
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {.banner__media.media {display: none; }}",
+        "@media only screen and (min-width: 768px) {.banner__media.media {display: block; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_5b02b9d9-d7cd-4e0b-b67f-1776f64ee0a6.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_CmidPH": {
+      "type": "image-banner",
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {.banner {display: block; }}",
+        "@media only screen and (min-width: 768px) {.banner {display: none; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pre-loved_baby_stuff_1_a4de9457-9fb5-47f1-b626-fd535ba6feb0.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "ss_hero_9_ym4CDk": {
+      "type": "ss-hero-9",
+      "blocks": {
+        "image_j9hAWb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-05-12_162424.png"
+          }
+        },
+        "image_MfUcpn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-05-12_162405.png"
+          }
+        },
+        "image_EPA4i7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-05-12_162504.png"
+          }
+        },
+        "image_UCajqc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-05-12_162436.png"
+          }
+        },
+        "image_rJ33NC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-05-12_162512.png"
+          }
+        },
+        "image_PEmygy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-05-08_185942.png"
+          }
+        },
+        "image_BLtB3X": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-05-08_185924.png"
+          }
+        },
+        "image_mk6DMT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-05-12_162455.png"
+          }
+        },
+        "image_8MRxiz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2024-05-12_162445.png"
+          }
+        },
+        "image_GAnaF4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/363517681_808617787635701_1076150091796693075_n.jpg"
+          }
+        },
+        "image_DwqVmX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/327981683_1217296615866875_5924823862033513781_n.jpg"
+          }
+        },
+        "image_DqaNcz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_j9hAWb",
+        "image_MfUcpn",
+        "image_EPA4i7",
+        "image_UCajqc",
+        "image_rJ33NC",
+        "image_PEmygy",
+        "image_BLtB3X",
+        "image_mk6DMT",
+        "image_8MRxiz",
+        "image_GAnaF4",
+        "image_DwqVmX",
+        "image_DqaNcz"
+      ],
+      "settings": {
+        "body_layout": "images_content",
+        "body_gap": 40,
+        "body_gap_mobile": 40,
+        "heading": "<h1>מי אנחנו?<\/h1>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 50,
+        "heading_size_mobile": 32,
+        "heading_height": 110,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "text": "<p>מודינו היא חברת צעצועים שמטרתה היא לשלב בין כיף והנאה לבין פיתוח חשיבה ולמידה. <\/p><p>כאן תוכלו למצוא צעצועים שיספקו שעות של הנאה לילדים ולנכדים שלכם תוך פיתוח החשיבה והיצירתיות שלהם. <\/p><p>הצעצועים של מודינו הינם חלק בלתי נפרד מתהליך הגדילה והצמיחה של אלפי ילדים❣️<\/p>",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 24,
+        "text_size_mobile": 18,
+        "text_height": 130,
+        "text_mt": 24,
+        "text_align": "center",
+        "text_align_mobile": "center",
+        "button": "אודותינו",
+        "button_url": "shopify:\/\/pages\/אודותינו",
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 16,
+        "button_height": 100,
+        "button_width": 200,
+        "button_width_mobile": 200,
+        "button_mt": 60,
+        "button_mt_mobile": 16,
+        "button_padding_vertical": 16,
+        "button_padding_vertical_mobile": 16,
+        "button_padding_horizontal": 24,
+        "button_padding_horizontal_mobile": 24,
+        "button_radius": 4,
+        "button_border_thickness": 1,
+        "button_align": "center",
+        "button_align_mobile": "center",
+        "button_style": "non_outline",
+        "images_width_mobile": 100,
+        "images_height": 740,
+        "images_height_mobile": 300,
+        "images_gap": 20,
+        "images_gap_mobile": 14,
+        "images_align_mobile": "center",
+        "images_animation": "back_forth",
+        "images_speed": 50,
+        "image_radius": 12,
+        "image_border_thickness": 0,
+        "image_ratio": "square",
+        "image_ratio_mobile": "square",
+        "image_shadow": false,
+        "image_gradient": false,
+        "button_color": "#ffffff",
+        "button_hover_color": "#ffffff",
+        "button_bg_color": "#ffdc2a",
+        "button_bg_hover_color": "#ffc520",
+        "button_border_color": "#ffdc2a",
+        "button_border_hover_color": "#ffdc2a",
+        "heading_color": "#f5f5f5",
+        "text_color": "#ffffff",
+        "images_gradient_color": "#faebe3",
+        "image_border_color": "#000000",
+        "background_color": "#1d193f",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_top_mobile": 36,
+        "padding_bottom": 36,
+        "padding_bottom_mobile": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 150,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "rich_text_AExCnJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_miNHiw": {
+          "type": "heading",
+          "settings": {
+            "heading": "המומלצים שלנו",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_miNHiw"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ss_circle_menu_448XXx": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_bgjKAG": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/9cd25606186b8b98a9f4f39b9fcf2f05.png",
+            "bubble_text": "קוביית הקסם",
+            "bubble_link": "shopify:\/\/products\/קוביית-הקסם"
+          }
+        },
+        "image_ATB8Tm": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/1-768x768.jpg",
+            "bubble_text": "ספינר הקסם",
+            "bubble_link": "shopify:\/\/products\/מודינו-ספינר-הקסם"
+          }
+        },
+        "image_kUrJbH": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2024-04-22120855.png",
+            "bubble_text": "כדור הקסם המעופף",
+            "bubble_link": "shopify:\/\/products\/כדור-הקסם-המעופף"
+          }
+        },
+        "image_QMFdgB": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2024-05-26122614.png",
+            "bubble_text": "כדור החלל",
+            "bubble_link": "shopify:\/\/products\/מודינו-כדור-חלל"
+          }
+        },
+        "image_bbTAyA": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2024-04-27185401.png",
+            "bubble_text": "לגו פרח",
+            "bubble_link": "shopify:\/\/products\/פרח-לגו"
+          }
+        }
+      },
+      "block_order": [
+        "image_bgjKAG",
+        "image_ATB8Tm",
+        "image_kUrJbH",
+        "image_QMFdgB",
+        "image_bbTAyA"
+      ],
+      "settings": {
+        "slider_width": 100,
+        "slider_gap": 16,
+        "slider_gap_mobile": 24,
+        "icon_size": 144,
+        "icon_size_mobile": 102,
+        "icon_space": 0,
+        "icon_space_mobile": 0,
+        "icon_border_thickness": 0,
+        "icon_square": false,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 20,
+        "text_size_mobile": 14,
+        "text_height": 130,
+        "text_mt": 8,
+        "icon_border_color": "#ffffff",
+        "icon_border_gradient": "",
+        "text_color": "#ffffff",
+        "background_color": "#1d193f",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "border_gradient": "",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 150,
+        "border_thickness": 0,
+        "lazy": true,
+        "hide_mobile": false,
+        "hide_desktop": false
+      }
+    },
+    "rich_text_GCmEp4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Azd7qh": {
+          "type": "heading",
+          "settings": {
+            "heading": "קצת עלינו",
+            "heading_size": "h0"
+          }
+        },
+        "text_DkqD43": {
+          "type": "text",
+          "settings": {
+            "text": "<p>אנו מאמינים ביצירת צעצועים מהפנטים המעוררים תנועה בגוף וגירוי לנפש, לשעות של כיף, ביום וגם בלילה!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Azd7qh",
+        "text_DkqD43"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 8
+      }
+    },
+    "featured_product_hYq3QE": {
+      "type": "featured-product",
+      "blocks": {
+        "text_GWj7LQ": {
+          "type": "text",
+          "settings": {
+            "text": "מעל 5,000 לקוחות מרוצים ⭐⭐⭐",
+            "text_style": "body"
+          }
+        },
+        "title_NTbn8Y": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_mRtxn8": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "text_YpqgFQ": {
+          "type": "text",
+          "settings": {
+            "text": "🙌 מתאים לכולם",
+            "text_style": "body"
+          }
+        },
+        "text_6mBxYF": {
+          "type": "text",
+          "settings": {
+            "text": "🤯 יותר מ70 צורות",
+            "text_style": "body"
+          }
+        },
+        "text_bDVCkb": {
+          "type": "text",
+          "settings": {
+            "text": "💡 מפתח את החשיבה",
+            "text_style": "body"
+          }
+        },
+        "variant_picker_RXA3Ti": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_xVKhnp": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons_8bCzdt": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "text_GWj7LQ",
+        "title_NTbn8Y",
+        "price_mRtxn8",
+        "text_YpqgFQ",
+        "text_6mBxYF",
+        "text_bDVCkb",
+        "variant_picker_RXA3Ti",
+        "quantity_selector_xVKhnp",
+        "buy_buttons_8bCzdt"
+      ],
+      "settings": {
+        "product": "קוביית-הקסם",
+        "color_scheme": "scheme-3b990cbc-d370-4b8e-96f6-7110226ea607",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_zK8UQ4": {
+      "type": "image-banner",
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {.banner__media.media {display: none; }}",
+        "@media only screen and (min-width: 768px) {.banner__media.media {display: block; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4_188c45db-4db2-4d06-b15e-7de4a06f374f.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_K3kzdE": {
+      "type": "image-banner",
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {.banner {display: block; }}",
+        "@media only screen and (min-width: 768px) {.banner {display: none; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pre-loved_baby_stuff_1_a8426944-12c8-4469-9269-fa82d7a6e877.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "ss_feature_7_rnBLA8": {
+      "type": "ss-feature-7",
+      "blocks": {
+        "item_dkrmJp": {
+          "type": "item",
+          "settings": {
+            "icon": "love",
+            "heading": "<h3>שירות מקצועי ומהיר<\/h3>",
+            "text": "<p>צוות שירות הלקוחות המסור והמקצועי שלנו זמין בשבילך לכל שאלה ובעיה בווצאפ ובמייל שלנו. <\/p>",
+            "image_block_bg": "#71f5fb",
+            "image_svg_color": "#ffffff"
+          }
+        },
+        "item_PfcRHq": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "heading": "<h3>14 ימי ניסיון<\/h3>",
+            "text": "<p>כן! שמעתם נכון. יש לכם על כל המוצרים שלנו 14 ימי ניסיון! <\/p><p>התאכזבתם.. התחרטתם.. מגיע לכם החזר מלא!<\/p>",
+            "image_block_bg": "#7d1470",
+            "image_svg_color": "#ffffff"
+          }
+        },
+        "item_XxiVHz": {
+          "type": "item",
+          "settings": {
+            "icon": "truck",
+            "heading": "<h3>משלוחים לכל רחבי הארץ<\/h3>",
+            "text": "<p>דאגנו לכם לשירות משלוחים מהיר ויעיל לכל רחבי הארץ.<\/p>",
+            "image_block_bg": "#ffdc2a",
+            "image_svg_color": "#ffffff"
+          }
+        },
+        "item_8w6E4z": {
+          "type": "item",
+          "settings": {
+            "icon": "mobile",
+            "heading": "<h3>אתר מאובטח ומוצפן<\/h3>",
+            "text": "<p>רכשו בביטחון מלא אצלנו- עם מערכת האבטחה המתקדמת בארץ עם מעל 5,000 לקוחות מרוצים שרכשו בביטחה בשנה האחרונה.<\/p>",
+            "image_block_bg": "#ffffff",
+            "image_svg_color": "#121212"
+          }
+        }
+      },
+      "block_order": [
+        "item_dkrmJp",
+        "item_PfcRHq",
+        "item_XxiVHz",
+        "item_8w6E4z"
+      ],
+      "settings": {
+        "heading": "למה דווקא אנחנו?",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 34,
+        "heading_size_mobile": 30,
+        "heading_height": 130,
+        "heading_align": "center",
+        "items_row": 4,
+        "items_row_mobile": 1,
+        "items_gap": 20,
+        "items_gap_mobile": 20,
+        "items_style": "slider",
+        "items_mt": 32,
+        "items_padding_vertical": 0,
+        "items_padding_horizontal": 0,
+        "items_radius": 0,
+        "image_block_width": 60,
+        "image_block_width_mobile": 60,
+        "image_block_radius": 200,
+        "image_width": 50,
+        "image_width_mobile": 50,
+        "item_heading_custom": false,
+        "Item_heading_font": "josefin_sans_n4",
+        "item_heading_size": 22,
+        "item_heading_size_mobile": 18,
+        "item_heading_height": 130,
+        "item_heading_align": "center",
+        "item_heading_mt": 24,
+        "item_text_custom": false,
+        "Item_text_font": "josefin_sans_n4",
+        "item_text_size": 14,
+        "item_text_size_mobile": 14,
+        "item_text_height": 130,
+        "item_text_align": "center",
+        "item_text_mt": 12,
+        "heading_color": "#ffffff",
+        "items_bg_color": "#1d193f",
+        "item_heading_color": "#ffffff",
+        "item_text_color": "#ffffff",
+        "pagination_color": "#ffffff",
+        "background_color": "#1d193f",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 8,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "content_width": 120,
+        "border_thickness": 0
+      }
+    },
+    "f8295264-509e-4b1d-befa-1a6666061e5f": {
+      "type": "multirow",
+      "blocks": {
+        "template--17171269746946__f8295264-509e-4b1d-befa-1a6666061e5f-row-2": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8bb2fe5886a98c26ae6f31b7a9ae6c58.jpg",
+            "caption": "",
+            "heading": "תרומה לקהילה",
+            "text": "<p>מודינו הינה חנות חברתית אינטרנטית שמאפשרת לכם לתמוך ברווחתם של משפחות מעוטות יכולת בכל רכישה. חנות חברתית היא עסק שמבוסס על מוטיבציה ליצור שינוי, ולשם כך תורם מזון, תומך בעמתות ועוזר לחלק מוצרי צריכה בסיסים לאלה הזקוקים לכך.<\/p><p>המחויבות העמוקה שלנו לקהילה הופכת אותנו להרבה יותר מעוד סתם חנות, ומאפשרת גם לכם להצטרף לפרויקט שלנו בכל קניה. <\/p><p>אם חיפשתם חנות מתקדמת עם ערך מוסף, נשמח מאוד לשמוע מכם. אתם מוזמנים לרכוש את המוצרים מהחנות האינטרנטית של מודינו, וליהנות משליחות עד הבית ומהידיעה שעזרתם לחולל שינוי.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17171269746946__f8295264-509e-4b1d-befa-1a6666061e5f-row-2"
+      ],
+      "settings": {
+        "image_height": "large",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "rich_text_Ddp3BJ": {
+      "type": "rich-text",
+      "blocks": {
+        "button_yLMqYM": {
+          "type": "button",
+          "settings": {
+            "button_label": "יצירת קשר📞",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_yLMqYM"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "1706000715ad795ccd": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "image_banner_KQpeiK",
+    "image_banner_CmidPH",
+    "ss_hero_9_ym4CDk",
+    "rich_text_AExCnJ",
+    "ss_circle_menu_448XXx",
+    "rich_text_GCmEp4",
+    "featured_product_hYq3QE",
+    "image_banner_zK8UQ4",
+    "image_banner_K3kzdE",
+    "ss_feature_7_rnBLA8",
+    "f8295264-509e-4b1d-befa-1a6666061e5f",
+    "rich_text_Ddp3BJ",
+    "1706000715ad795ccd"
+  ]
+}

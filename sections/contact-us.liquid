@@ -1,0 +1,135 @@
+    <style>
+      .contact-section {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 30px 0;
+      }
+      .contact-info p {
+        margin: 0px;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #47485e;
+      }
+      .sub-contact {
+        background-color: #DDDBF0;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+        text-align: right;
+        flex-direction: row-reverse;
+      }
+      .icon-wrapper i {
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 13px;
+        background-color: #434866;
+        color: white;
+        border-radius: 40px;
+        box-sizing: content-box;
+      }
+      .contact-section a,
+      .contact-section a:hover {
+        text-decoration: none;
+      }
+      @media screen and (max-width:600px) {
+        .sub-contact {
+            background-color: transparent;
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+        .contact-info p {
+            color: white;
+            font-size: 14px;
+        }
+      }
+    </style>
+    
+    <div class="contact-section">
+      {% for block in section.blocks %}
+      <div class="sub-contact">
+        <div class="contact-info">
+          <a href="{{ block.settings.link }}" target="_blank" rel="noopener noreferrer">
+            <div>{{ block.settings.description }}</div>
+          </a>
+        </div>
+        <div class="social-icon">
+          <div class="icon-wrapper">
+            <a href="{{ block.settings.link }}" target="_blank" rel="noopener noreferrer">
+              <i class="{{ block.settings.icon_select }}"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+{% schema %}
+  {
+    "name": "contact us",
+    "settings": [],
+    "max_blocks": 5,
+    "blocks": [
+     {
+       "name": "Add Info",
+       "type": "social-list",
+       "settings": [
+         {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          },
+          {
+            "type": "html",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "select",
+            "id": "icon_select",
+            "label": "Icon Select",
+            "options": [
+              {
+                "value": "fa-brands fa-whatsapp",
+                "label": "fa-whatsapp"
+              },
+              {
+                "value": "fa-solid fa-phone",
+                "label": "fa-phone"
+              },
+              {
+                "value": "fa-brands fa-facebook-messenger",
+                "label": "fa-facebook-messenger"
+              },
+              {
+                "value": "fa-brands fa-instagram",
+                "label": "fa-instagram"
+              },
+              {
+                "value": "fa-solid fa-envelope-open-text",
+                "label": "fa-envelope-open-text"
+              },
+              {
+                "value": "fa-solid fa-truck",
+                "label": "fa-Truck"
+              }
+            ],
+            "default": "fa-brands fa-facebook-messenger",
+            "info": "Select Icon"
+          }
+       ]
+     }
+  ],
+    "presets": [
+        {
+            "name": "contact us"
+        }
+    ]
+  }
+{% endschema %}

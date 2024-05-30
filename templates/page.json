@@ -1,0 +1,92 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_83eKfx": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/iStock-1183183791.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_EgG48L": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pqr8QR": {
+          "type": "heading",
+          "settings": {
+            "heading": "הסיפור שלנו",
+            "heading_size": "h0"
+          }
+        },
+        "text_AUAzrV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>כל סיפור במקום כלשהו, שלנו מתחיל מאהבתנו לאומנות חול ,צורות גאומטריות ועיצובים מרהיבים.✨<\/p><p>חיפשנו משחק שבו נוכל לשלב את האהבה שלנו ובו זמנית לספק שעשוע וכיף שיאתגרו ויפתחו את המוח🧠<\/p><p>לבסוף הגענו למוצר הסופי \"מודינו קוביית הקסם\"  🪄<br\/>קובייה אחת בעלת 36 סוגי מגנטים שמאפשרים יצירה של למעלה מ 70 צורות שונות !🤯<br\/> בהשראת האומנות היפנית אוריגמי.<\/p><p>הקובייה עובדת בשיטת ריפוי בעיסוק  ומשרה רוגע ונחת ובו זמנית מפתחת את היצירתיות והמחשבה שלכם🧘<br\/><\/p><p>והיום, הקובייה מגיעה אליכם בשלל סגנונות ועיצובים מרהיבים🌟<br\/>אז למה אתם מחכים? השיגו את שלכם עוד היום!!<\/p>"
+          }
+        },
+        "button_P3Liy3": {
+          "type": "button",
+          "settings": {
+            "button_label": "לרכישה 🎁",
+            "button_link": "shopify:\/\/products\/קוביית-הקסם",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_pqr8QR",
+        "text_AUAzrV",
+        "button_P3Liy3"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_tfjdkK": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bored-lazy-worker-with-his-hands-wasting-time-playing-with-pens.jpg_s_1024x1024_w_is_k_20_c_eWQxZK4DLsWOvMI20Q0vT4gFseXmRnwmZhOufptMpx0.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_83eKfx",
+    "rich_text_EgG48L",
+    "image_banner_tfjdkK"
+  ]
+}

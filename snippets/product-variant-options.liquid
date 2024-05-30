@@ -1,0 +1,416 @@
+{% comment %}
+  Renders product variant options
+
+  Accepts:
+  - product: {Object} product object.
+  - option: {Object} current product_option object.
+  - block: {Object} block object.
+
+
+  Usage:
+  {% render 'product-variant-options',
+    product: product,
+    option: option,
+    block: block
+  %}
+{% endcomment %}
+{%- liquid
+  assign variants_available_arr = product.variants | map: 'available'
+  assign variants_option1_arr = product.variants | map: 'option1'
+  assign variants_option2_arr = product.variants | map: 'option2'
+  assign variants_option3_arr = product.variants | map: 'option3'
+
+  assign product_form_id = 'product-form-' | append: section.id
+-%}
+
+<script>
+  function updateQuantityAndClickImage(element, increment) {
+      const container = element.closest('.variant-option');
+      const quantitySpan = container.querySelector('.quantity-input');
+      let currentQuantity = parseInt(quantitySpan.textContent, 10);
+      currentQuantity = increment ? currentQuantity + 1 : currentQuantity - 1;
+      quantitySpan.textContent = Math.max(0, currentQuantity);  // Ensure quantity cannot be negative
+
+      // Toggle visibility class based on the quantity
+      if (currentQuantity > 0) {
+          container.classList.add('show-controls');
+      } else {
+          container.classList.remove('show-controls');
+      }
+
+      if (currentQuantity >= 1) {
+          container.style.border = '1px solid #ccc';
+      } else {
+          container.style.border = '1px solid transparent';
+      }
+
+      updateProgressBarAndSavingsMessage();
+     
+  }
+
+
+  function updateProgressBarAndSavingsMessage() {
+      const quantityInputs = document.querySelectorAll('.variant-option .quantity-input');
+      const totalQuantity = Array.from(quantityInputs).reduce((sum, input) => sum + parseInt(input.textContent, 10), 0);
+
+      const progressBar = document.querySelector('.progress-bar');
+      const progressPercent = Math.min(100, (totalQuantity / 4) * 100);
+      progressBar.style.width = `${progressPercent}%`;
+
+      updateSavingsMessage(totalQuantity);
+  }
+
+function updateSavingsMessage(totalQuantity) {
+    let savingsMessage = "";
+    if (totalQuantity >= 9) {
+        savingsMessage = "כלל שתוסיפ/י יותר קובייות המחיר יהיה משתלם יותר! ";
+    } else if (totalQuantity == 8) {
+        savingsMessage = "הוסיפו יותר וחסכו יותר! <br> מחיר כעת- 400₪";
+    } else if (totalQuantity == 7) {
+        savingsMessage = "הוסיפו יותר וחסכו יותר! <br> מחיר כעת- 350₪";
+    } else if (totalQuantity == 6) {
+        savingsMessage = "הוסיפו יותר וחסכו יותר! <br> מחיר כעת- 310₪";
+    } else if (totalQuantity == 5) {
+        savingsMessage = "הוסיפו יותר וחסכו יותר!  <br> מחיר כעת- 270₪";
+    } else if (totalQuantity == 4) {
+        savingsMessage = "קיבלת את ההצעה המשתלמת ביותר!  <br> מחיר כעת- 228₪";
+    } else if (totalQuantity == 3) {
+        savingsMessage = "כמעט בהצעה המשתלמת ביותר! <br> מחיר כעת- 187₪";
+    } else if (totalQuantity == 2) {
+        savingsMessage ="הוסיפו עוד קובייה וחסכו עוד 50₪! <br> מחיר כעת- 138₪";
+    } else if (totalQuantity == 1) {
+        savingsMessage = "הוסיפו עוד קובייה וקבלו משלוח חינם + הנחה!<br> מחיר כעת- 79₪";
+    } else {
+        savingsMessage = "הוסיפו 2 קוביות וקבלו משלוח חינם!";
+    }
+    document.querySelector('.savings-message').innerHTML = savingsMessage;
+}
+
+
+  function addToCart(itemsToAdd) {
+    if (itemsToAdd.length > 0) {
+        fetch('/cart/add.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ items: itemsToAdd })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('All items added:', data);
+            // Reset quantity inputs to zero after items are added to the cart
+            const quantityInputs = document.querySelectorAll('.variant-option .quantity-input');
+            quantityInputs.forEach(input => {
+                input.value = 0;
+            });
+            resetProgressBarAndMessage();
+        })
+        .catch(error => {
+            console.error('Error adding items:', error);
+        });
+    } else {
+        alert("עדיין לא בחרת פריט!");
+        console.log("No items with quantity > 0 to add.");
+    }
+}
+
+</script>
+
+
+
+{%- liquid
+  assign variants_available_arr = product.variants | map: 'available'
+  assign variants_option1_arr = product.variants | map: 'option1'
+  assign variants_option2_arr = product.variants | map: 'option2'
+  assign variants_option3_arr = product.variants | map: 'option3'
+
+  assign product_form_id = 'product-form-' | append: section.id
+-%}
+<p class="savings-message" style="margin-top:4px; margin-bottom: 2px;">הוסף יחידות כדי להתחיל לחסוך!</p>
+<div style="position:relative;">
+<div class="progress-container">
+    <div class="progress-bar" style="width: 0%;"></div>
+    <div>
+  <div class="upcart-rewards-tier styles_TieredRewards__tierCircleAndDescription__AhLjz styles_TieredRewards__tierCircleAndDescription--exactlyCenter__8D9zz" style="
+    position: absolute;
+    right: 33%;
+    z-index: 0;
+    margin-top: -25px;
+">
+    <div class="upcart-rewards-tier-circle styles_TieredRewards__tierCircle__9VXUI" style="border: 2px solid rgb(255, 231, 0); background-color: rgb(0, 0, 0); fill: rgb(255, 231, 0);"><div class="upcart-rewards-tier-icon" style="width: 25px; height: 25px; margin: auto;"><svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 5.25a.75.75 0 0 1 .75-.75h6.991a2.75 2.75 0 0 1 2.645 1.995l.427 1.494a.25.25 0 0 0 .18.173l1.681.421a1.75 1.75 0 0 1 1.326 1.698v1.219a1.75 1.75 0 0 1-1.032 1.597 2.5 2.5 0 1 1-4.955.153h-3.025a2.5 2.5 0 1 1-4.78-.75h-.458a.75.75 0 0 1 0-1.5h2.5c.03 0 .06.002.088.005a2.493 2.493 0 0 1 1.947.745h4.43a2.493 2.493 0 0 1 1.785-.75c.698 0 1.33.286 1.783.748a.25.25 0 0 0 .217-.248v-1.22a.25.25 0 0 0-.19-.242l-1.682-.42a1.75 1.75 0 0 1-1.258-1.217l-.427-1.494a1.25 1.25 0 0 0-1.202-.907h-6.991a.75.75 0 0 1-.75-.75Zm2.5 9.25a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path><path d="M3.25 8a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5h-5Z"></path></svg></div></div><div class="upcart-rewards-tier-description styles_rewardsDescription__osUyE">משלוח חינם</div></div>
+  <div class="upcart-rewards-tier styles_TieredRewards__tierCircleAndDescription__AhLjz styles_TieredRewards__tierCircleAndDescription--leftOfCenter__ahzqi" style="
+    position: absolute;
+    right: 83%;
+    z-index: 0;
+    margin-top: -25px;
+"><div class="upcart-rewards-tier-circle styles_TieredRewards__tierCircle__9VXUI" style="border: 2px solid rgb(255, 231, 0); background-color: rgb(0, 0, 0); fill: rgb(255, 231, 0);"><div class="upcart-rewards-tier-icon" style="width: 25px; height: 25px; margin: auto;"><svg viewBox="0 0 20 20"><path d="M13 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path><path fill-rule="evenodd" d="M11.276 3.5a3.75 3.75 0 0 0-2.701 1.149l-4.254 4.417a2.75 2.75 0 0 0 .036 3.852l2.898 2.898a2.5 2.5 0 0 0 3.502.033l4.747-4.571a3.25 3.25 0 0 0 .996-2.341v-2.187a3.25 3.25 0 0 0-3.25-3.25h-1.974Zm-1.62 2.19a2.25 2.25 0 0 1 1.62-.69h1.974c.966 0 1.75.784 1.75 1.75v2.187c0 .475-.194.93-.536 1.26l-4.747 4.572a1 1 0 0 1-1.401-.014l-2.898-2.898a1.25 1.25 0 0 1-.016-1.75l4.253-4.418Z"></path></svg></div></div><div class="upcart-rewards-tier-description styles_rewardsDescription__osUyE">הנמכר ביותר</div></div>
+    </div>
+  
+</div>
+  </div>
+<div style="padding: 4px; margin: 10px 0px; display: flex; flex-wrap: wrap;">
+
+{%- for value in option.values -%}
+  <div class="col">
+  {%- liquid
+    assign option_disabled = true
+
+    for option1_name in variants_option1_arr
+      case option.position
+        when 1
+          if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+            assign option_disabled = false
+          endif
+        when 2
+          if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+            assign option_disabled = false
+          endif
+        when 3
+          if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+            assign option_disabled = false
+          endif
+      endcase
+    endfor
+  -%}
+
+  {%- if block.settings.picker_type == 'button' -%}
+    <div class="variant-option">
+      <div class="variant-name" style="display:none;">{{ value }}</div>
+      {% if product.variants[forloop.index0].image != blank and option.name == 'סגנון' %}
+        <label
+          for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="variant-img"
+          style="background-image: url({{ product.variants[forloop.index0].image | img_url: '' }});width: 58px; height: 50px; background-size: contain; display: block; cursor: pointer; border-radius: 50%; margin: auto;"
+        ></label>
+      {% endif %}
+
+      <button class="quantity-button" onclick="updateQuantityAndClickImage(this, false)">-</button>
+      <span class="quantity-input" id="quantity-display-{{ forloop.index0 }}"
+           data-variant-id="{{ product.variants[forloop.index0].id }}"
+           data-product-id="{{ product.id }}"
+           data-section-id="{{ section.id }}"
+           style="display: inline-block; text-align: center;">0</span>
+      <button class="quantity-button" onclick="updateQuantityAndClickImage(this, true)">+</button>
+
+
+      <input
+        type="radio"
+        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+        name="{{ option.name }}"
+        value="{{ value | escape }}"
+        form="{{ product_form_id }}"
+        {% if option.selected_value == value %}
+          checked
+        {% endif %}
+        {% if option_disabled %}
+          class="disabled"
+        {% endif %}
+      >
+
+      {% if product.variants[forloop.index0].image == blank or option.name != 'סגנון' %}
+        <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+          {{ value -}}
+          <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+        </label>
+      {% endif %}
+    </div>
+  {%- elsif block.settings.picker_type == 'dropdown' -%}
+    <option
+      value="{{ value | escape }}"
+      {% if option.selected_value == value %}
+        selected="selected"
+      {% endif %}
+      {% if option_disabled %}
+        disabled="disabled"
+        {{- 'products.product.value_unavailable' | t: option_value: value -}}
+      {%- else -%}
+        {{- value -}}
+      {%- endif %}
+    </option>
+  {%- endif -%}
+    </div>
+{%- endfor -%}
+
+  </div>
+
+
+
+<button id="addAllToCart" class="product-form__submit button button--full-width button--primary" type="button" onclick="addToCart(collectVariantData())" style="border-radius: 4px;">הוספה לעגלה👈🏽</button>
+
+
+<script>
+  function collectVariantData() {
+      const quantityInputs = document.querySelectorAll('.variant-option .quantity-input');
+      const itemsToAdd = Array.from(quantityInputs).reduce((acc, span) => {
+          const quantity = parseInt(span.textContent, 10);
+          if (quantity > 0) {
+              acc.push({
+                  id: span.dataset.variantId,
+                  quantity: quantity.toString(),
+                  form_type: "product",
+                  utf8: "✓",
+                  "product-id": span.dataset.productId,
+                  "section-id": span.dataset.sectionId
+              });
+          }
+          return acc;
+      }, []);
+
+      console.log("Items to Add:", itemsToAdd);  // Debugging output
+      return itemsToAdd;
+  }
+
+
+function addToCart(itemsToAdd) {
+    if (itemsToAdd.length > 0) {
+        fetch('/cart/add.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ items: itemsToAdd })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('All items added:', data);
+            // Reset quantity inputs to zero after items are added to the cart
+            const quantityInputs = document.querySelectorAll('.variant-option .quantity-input');
+            quantityInputs.forEach(input => {
+                input.value = 0;
+            });
+            resetProgressBarAndMessage();
+        })
+        .catch(error => {
+            console.error('Error adding items:', error);
+        });
+    } else {
+      alert("אנא בחר/י את עיצוב הקובייה בו את/ה מעוניינ/ת לפני ההוספה לעגלה ולחץ/י על פלוס")
+        console.log("No items with quantity > 0 to add.");
+    }
+}
+
+function resetProgressBarAndMessage() {
+    const progressBar = document.querySelector('.progress-bar');
+    progressBar.style.width = '0%';
+    const savingsMessage = document.querySelector('.savings-message');
+    savingsMessage.textContent = "הוסף יחידות כדי להתחיל לחסוך!";
+    
+
+    const quantitySpans = document.querySelectorAll('.variant-option .quantity-input');
+    quantitySpans.forEach(span => {
+        span.textContent = '0';
+    });
+}
+
+
+</script>
+
+
+
+
+
+
+
+<style>
+.variant-option {
+    display: inline-block;
+    border: 1px solid transparent;  // Default border style
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0px;
+    text-align: center;
+    padding: 2px;
+    transition: border 0.3s ease, opacity 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+.variant-option:hover {
+    border: 1px solid #ccc;
+}
+.variant-option:active, .variant-option:focus-within {
+    border: 1px solid #007BFF;
+}
+.quantity-button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 7px 10px;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.variant-option:hover .quantity-button, .variant-option:hover .quantity-input {
+    visibility: visible;
+    opacity: 1;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.quantity-input {
+    /* color: white; */
+    width: 8px;
+    text-align: center;
+    margin: 0;
+    height: 24px;
+    line-height: 24px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #000;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 11px;
+    box-shadow: 0px 0px 2px #fdfdfd80;
+    margin: 50px 0px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #ffe700;
+    width: 0%;
+    transition: width 1s ease;
+    display: block !important;
+}
+
+
+  #ProductSubmitButton-template--17723064779010__2f38f903-286b-4ebd-a946-5b216705afc5, .product-form__input.product-form__quantity{
+      display:none;
+
+  }
+
+  .variant-option.show-controls .quantity-button,
+.variant-option.show-controls .quantity-input {
+    visibility: visible;
+    opacity: 1;
+}
+
+#addAllToCart:after{
+    box-shadow: 0 0 0 rgba(0,0,0,0) !important;
+}
+
+  .special-text {
+    background-color: red;
+    padding: 4px 12px;
+    border-radius: 25px;
+    color: white;
+}
+  .discount-info {
+    font-size: smaller;
+}
+  .strike {
+    text-decoration: line-through;
+}
+
+
+</style>
