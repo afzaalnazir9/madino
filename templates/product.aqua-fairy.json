@@ -1,0 +1,1378 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "5dcaae4e-bb5b-4249-b733-8117a154ca60": {
+          "type": "text",
+          "settings": {
+            "text": "⭐️⭐️⭐️⭐️⭐️מעל ל-5,000 לקוחות מרוצים!",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price_fEDkNe": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "9c95162a-4488-473a-860f-3b85aab21363": {
+          "type": "text",
+          "settings": {
+            "text": "🙌 בטוח לשימוש",
+            "text_style": "body"
+          }
+        },
+        "473970a4-e61d-4a3f-af1f-4b8018c1c889": {
+          "type": "text",
+          "settings": {
+            "text": "🤯 אינסוף אפשרויות עיצוב",
+            "text_style": "body"
+          }
+        },
+        "2c79532f-67f6-4ad0-aed7-f51890959124": {
+          "type": "text",
+          "settings": {
+            "text": "💡 למידה בכיף",
+            "text_style": "body"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "83ca906c-1e61-4d33-9d2c-3c1104202046": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "איך זה עובד?",
+            "icon": "question_mark",
+            "content": "<p>הקובייה בנויה מ36 מגנטים מיוחדים שמאפשרים ליצור יותר כ-70 צורות שונות שיאתגרו ויפתחו את היצירתיות שבכם. <\/p><p>שלבו קוביות נוספות וצרו אינספור צורות ועיצובים מטורפים!<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "7f3613eb-db3d-4bdc-9593-ffec1b70f831": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "תוך כמה זמן המשלוח יגיע?",
+            "icon": "truck",
+            "content": "<p>המשלוח יגיע בין 5 עד 25 ימי עסקים אליכם הביתה.<\/p><p>ייתכן ויהיו קצת עיכובים עקב המצב במדינה, נעשה הכל כדאי אליכם מהר ככל האפשר.<\/p><p>אנא שמרו על סבלנותכם.<\/p>",
+            "page": ""
+          }
+        },
+        "c45b8881-7122-43fd-ab8e-838f0cf71183": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "למה מודינו?",
+            "icon": "clipboard",
+            "content": "<p>מודינו היא טיפול טבעית לבעיות הקשב והריכוז, היא מעסיקה את המוח והידיים בצורה מאתגרת ובו זמנית עוזרת לשמור על ריכוז. <\/p><p>כך שתוכלו להימנע מתופעות הלוואי של הטיפולים הכימיים הקיימים בשוק ובו זמנית לפתח את המוח והיצירתיות שבכם.<\/p><p>בנוסף ובעיננו הכי חשוב מודינו היא חנות חברתית שתורמת חלק מהכנסותיה למשפחות קשות יום כך שתוכלו לתרום את חלקכם בכל קניה.<\/p><p><\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "3af219d2-224f-4c68-9d13-4f89dfdbb74d": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "למי זה מתאים?",
+            "icon": "heart",
+            "content": "<ul><li>מודינו מתאימה לכל מי שמחפש דרך לתת לדמיון שלו לפרוח.<\/li><li>למי שסובל מבעיות קשב וריכוז ונמאס לו מתופעות הלוואי של התרופות הקיימות בשוק.<\/li><li>למי שמחפש ונמשך לאתגרים<\/li><li>למי שמחפש מתנה מקורית ויוצאת דופן שהיא גם חינוכית וגם מפתחת את החשיבה והיצירתיות. <\/li><li>למי שמעוניין לשדרג את שולחן העבודה בצעצוע חדש.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "icon_with_text_w7cmDe": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "heart",
+            "heading_1": "שירות מקצועי ומהיר",
+            "icon_2": "shirt",
+            "heading_2": "מעל 5,000 לקוחות מרוצים!",
+            "icon_3": "clipboard",
+            "heading_3": "התחרטתם ? קבלו את כספכם חזרה!"
+          }
+        },
+        "collapsible_tab_GYKXVX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "תוך כמה זמן המשלוח שלי מגיע?",
+            "icon": "truck",
+            "content": "<p>זמן המשלוח הוא <strong>בד\"כ <\/strong>5-14 ימי עסקים. ייתכן ויהיו עיכובים בגלל המצב הביטחוני במדינה, עם ישראל חי!<\/p><p>המשלוח הוא חינם לנקודת איסוף לכל רחבי הארץ- בקנייה מעל 100 ₪.<strong> <\/strong><\/p><p> משלוח בעלות של 10 ₪ בקנייה של מתחת ל 100 ₪.<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_dxAirH": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "מה כוללת הערכה?",
+            "icon": "clipboard",
+            "content": "<ul><li>ארבעה בקבוקי ג'ל<\/li><li>ארבעה תבניות ליצירה<\/li><li>משלוח חינם לנ'ק איסוף<\/li><li>אחריות ל-60 יום, התחרטתם? קבלו את כספכם חזרה!<\/li><\/ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "5dcaae4e-bb5b-4249-b733-8117a154ca60",
+        "title",
+        "price_fEDkNe",
+        "9c95162a-4488-473a-860f-3b85aab21363",
+        "473970a4-e61d-4a3f-af1f-4b8018c1c889",
+        "2c79532f-67f6-4ad0-aed7-f51890959124",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "83ca906c-1e61-4d33-9d2c-3c1104202046",
+        "7f3613eb-db3d-4bdc-9593-ffec1b70f831",
+        "c45b8881-7122-43fd-ab8e-838f0cf71183",
+        "3af219d2-224f-4c68-9d13-4f89dfdbb74d",
+        "icon_with_text_w7cmDe",
+        "collapsible_tab_GYKXVX",
+        "collapsible_tab_dxAirH"
+      ],
+      "custom_css": [
+        ".swiper-pagination-bullets{margin-top:20px;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-3b990cbc-d370-4b8e-96f6-7110226ea607",
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "media_position": "right",
+        "image_zoom": "none",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": true,
+        "padding_top": 12,
+        "padding_bottom": 32
+      }
+    },
+    "image_banner_eHQQVN": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ezgif.com-crop_4_480x480_4ab5b9ff-8313-4284-8276-0d254d25e8b6.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_GFgrUV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PrpGga": {
+          "type": "heading",
+          "settings": {
+            "heading": "ליצרתיות אין גבול.",
+            "heading_size": "h1"
+          }
+        },
+        "text_m6arYh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>האם הרגשתם פעם את התסכול של צפייה בילדכם דבוק למסכים, מנותק מעולם הדמיון והמשחק?<br\/><br\/>בעידן דיגיטלי, שבו המסכים שולטים, מודינו הוא התשובה שלך להצית מחדש את היצירתיות שלהם.<br\/><br\/>הפוך את זמן המסך למשחק פעיל עם ייצור צעצועי ג'ל ב- 3D. צפו ביצירתיות של ילדכם מתעוררת לחיים כשהם מפסלים, צובעים ויוצרים עולם קסום!<br\/><\/p><p>אנחנו כבר הצטרפנו מה איתכם?<\/p>"
+          }
+        },
+        "button_FnYRE6": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "גלו את הערכות שלנו ⬇️",
+            "button_link": "#shopify-section-template--18004792836354__rich_text_qFd6KJ",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PrpGga",
+        "text_m6arYh",
+        "button_FnYRE6"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_LN3Yze": {
+      "type": "multirow",
+      "blocks": {
+        "row_mzibNb": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hNhcS333871af08b343a1a61a097272aa140cn_1.webp",
+            "caption": "",
+            "heading": "צרו בביטחון",
+            "text": "<p>ג'ל הקסם שלנו עשוי מנתרן אלגינט, חומר בטוח המופק מאצות ים, המבטיח יצירה ידידותית לילדים.<br\/><\/p><p>אבקת היצירה עשויה מסידן לקטט ומחזיקה בתעודת CPC ממעבדה של ממשלת ארה\"ב לבטיחות מקסימלית<\/p><p>כך שתוכלו לשחק ולייצור בראש שקט👍<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_qwhhBA": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/magic-water-jelly-2.jpg",
+            "caption": "",
+            "heading": "שעות של משחק!",
+            "text": "<p>הילדים שלכם משתעממים מהר?<\/p><p> לא אצלנו! <\/p><p>עם אינספור אפשריות עיצוב ויצירה הלקוחות שלנו מעידים שהילדים שלהם משחקים שעות נוספות בערכה שלנו😉<\/p><p>הערכה שלנו תהפוך לזמן איכות משותף שלא נגמר!!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_mzibNb",
+        "row_qwhhBA"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_dUzbGz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GLb8Ck": {
+          "type": "heading",
+          "settings": {
+            "heading": "למה דווקא אנחנו?",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GLb8Ck"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "ss_feature_7_MzARTf": {
+      "type": "ss-feature-7",
+      "blocks": {
+        "item_gC4rcy": {
+          "type": "item",
+          "settings": {
+            "icon": "payment",
+            "heading": "<h3>60 יום ניסיון!<\/h3>",
+            "text": "<p>התחרטתם? קבלו את כספכם חזרה!<\/p>",
+            "image_block_bg": "#83c3dc",
+            "image_svg_color": ""
+          }
+        },
+        "item_FqG7Ya": {
+          "type": "item",
+          "settings": {
+            "icon": "heart",
+            "heading": "<h3>שירות מכל הלב<\/h3>",
+            "text": "<p>שירות מהיר ומקצועי מכל ה-❤️‍🔥<\/p>",
+            "image_block_bg": "#b7d4da",
+            "image_svg_color": ""
+          }
+        },
+        "item_V9YCBk": {
+          "type": "item",
+          "settings": {
+            "icon": "mobile",
+            "heading": "<h3>תשלום מאובטח<\/h3>",
+            "text": "<p>האתר שלנו עומד בסטנדרטים הגבוהים ביותר וכל רכישה מאובטחת בתקן CSS<\/p>",
+            "image_block_bg": "#e7adba",
+            "image_svg_color": ""
+          }
+        },
+        "item_T9V8Am": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "heading": "<h3>מעל 5,000 לקוחות מרוצים<\/h3>",
+            "text": "<p>שירתנו כבר מעל 5,000 לקוחות מרוצים , תהיו הבאים בתור?<\/p>",
+            "image_block_bg": "#ffcb81",
+            "image_svg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_gC4rcy",
+        "item_FqG7Ya",
+        "item_V9YCBk",
+        "item_T9V8Am"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 34,
+        "heading_size_mobile": 30,
+        "heading_height": 150,
+        "heading_align": "center",
+        "items_row": 4,
+        "items_row_mobile": 1,
+        "items_gap": 20,
+        "items_gap_mobile": 20,
+        "items_style": "slider",
+        "items_mt": 0,
+        "items_padding_vertical": 0,
+        "items_padding_horizontal": 0,
+        "items_radius": 0,
+        "image_block_width": 60,
+        "image_block_width_mobile": 55,
+        "image_block_radius": 200,
+        "image_width": 50,
+        "image_width_mobile": 40,
+        "item_heading_custom": false,
+        "Item_heading_font": "josefin_sans_n4",
+        "item_heading_size": 22,
+        "item_heading_size_mobile": 18,
+        "item_heading_height": 130,
+        "item_heading_align": "center",
+        "item_heading_mt": 24,
+        "item_text_custom": false,
+        "Item_text_font": "josefin_sans_n4",
+        "item_text_size": 14,
+        "item_text_size_mobile": 14,
+        "item_text_height": 130,
+        "item_text_align": "center",
+        "item_text_mt": 12,
+        "heading_color": "#ffffff",
+        "items_bg_color": "#1d193f",
+        "item_heading_color": "#ffffff",
+        "item_text_color": "#ffffff",
+        "pagination_color": "#ffffff",
+        "background_color": "#1d193f",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "content_width": 120,
+        "border_thickness": 0
+      }
+    },
+    "multirow_RtM77R": {
+      "type": "multirow",
+      "blocks": {
+        "row_mf6FBA": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8bb2fe5886a98c26ae6f31b7a9ae6c58.jpg",
+            "caption": "",
+            "heading": "תרומה לקהילה",
+            "text": "<p>מודינו הינה חנות חברתית אינטרנטית שמאפשרת לכם לתמוך ברווחתם של משפחות מעוטות יכולת בכל רכישה. חנות חברתית היא עסק שמבוסס על מוטיבציה ליצור שינוי, ולשם כך תורם מזון, תומך בעמתות ועוזר לחלק מוצרי צריכה בסיסים לאלה הזקוקים לכך.<\/p><p>המחויבות העמוקה שלנו לקהילה הופכת אותנו להרבה יותר מעוד סתם חנות, ומאפשרת גם לכם להצטרף לפרויקט שלנו בכל קניה. <\/p><p>אם חיפשתם חנות מתקדמת עם ערך מוסף, נשמח מאוד לשמוע מכם. אתם מוזמנים לרכוש את המוצרים מהחנות האינטרנטית של מודינו, וליהנות משליחות עד הבית ומהידיעה שעזרתם לחולל שינוי.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_mf6FBA"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_hLE8Ht": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_133dec0e-e0a8-449d-98f2-328635380d27.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "ss_feature_15_Dn7UFQ": {
+      "type": "ss-feature-15",
+      "blocks": {
+        "item_86zyRR": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "heading": "בטוח לילדים",
+            "text": "<p>יצירה בראש שקט. אנו משתמשים בחומרים לא רעילים וידידותיים לסביבה המבטיחים זמן משחק בטוח לאמן הצעיר שלך.<\/p>",
+            "image": "shopify:\/\/shop_images\/3_38f854fc-0b35-40a3-8816-86955857ed8e.png"
+          }
+        },
+        "item_AH9TXM": {
+          "type": "item",
+          "settings": {
+            "icon": "share",
+            "heading": "למידה בכיף",
+            "text": "<p>טיפוח היצירתיות וזיהוי צבעים, הילדים חוקרים מדע באמצעות יצירת פלאי תלת-ממד.<\/p>",
+            "image": "shopify:\/\/shop_images\/4_cfe8c8e7-c2fe-468a-aa0e-ec0a23447ab2.png"
+          }
+        },
+        "item_LUHtze": {
+          "type": "item",
+          "settings": {
+            "icon": "plant",
+            "heading": "פשוט למשחק",
+            "text": "<p>זמן משחק פשוט ללא שום קושי בניקוי מה שהופך כל משחק יצירה לפשוט וקל לניקוי<\/p>",
+            "image": "shopify:\/\/shop_images\/5_cf37ef43-7e86-44f4-97f4-2367746831ae.png"
+          }
+        },
+        "item_rUBdRC": {
+          "type": "item",
+          "settings": {
+            "icon": "love",
+            "heading": "אפשרויות אינסופיות",
+            "text": "<p>יצירתיות חסרת גבולות, מכיוון שהילדים יכולים לשחק עם היצירות שלהם כחיות ימיות או להציג אותן כפריטי עיצוב ייחודיים.<\/p>",
+            "image": "shopify:\/\/shop_images\/6_91783431-3625-46c2-a709-587ad2f728de.png"
+          }
+        }
+      },
+      "block_order": [
+        "item_86zyRR",
+        "item_AH9TXM",
+        "item_LUHtze",
+        "item_rUBdRC"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 54,
+        "heading_size_mobile": 30,
+        "heading_height": 130,
+        "heading_align_mobile": "center",
+        "tabs_radius": 6,
+        "tabs_border_thickness": 0,
+        "tabs_mt_mobile": 24,
+        "tab_padding_vertical": 10,
+        "tab_padding_vertical_mobile": 10,
+        "tab_padding_horizontal": 14,
+        "tab_padding_horizontal_mobile": 14,
+        "tab_icon_size": 24,
+        "tab_icon_size_mobile": 24,
+        "tab_custom": false,
+        "tab_font": "josefin_sans_n4",
+        "tab_size": 14,
+        "tab_height": 100,
+        "slider_mt": 40,
+        "slider_mt_mobile": 40,
+        "slide_gap": 32,
+        "content_horizontal_align": "center",
+        "content_horizontal_align_mobile": "center",
+        "sub_heading_custom": false,
+        "sub_heading_font": "josefin_sans_n4",
+        "sub_heading_size": 32,
+        "sub_heading_size_mobile": 30,
+        "sub_heading_height": 130,
+        "sub_heading_mt": 20,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 18,
+        "text_size_mobile": 18,
+        "text_height": 150,
+        "text_mt": 16,
+        "text_mt_mobile": 0,
+        "list_item_icon_size": 16,
+        "list_item_icon_size_mobile": 16,
+        "slide_image_position": "left",
+        "slide_image_radius": 12,
+        "slide_image_border_thickness": 0,
+        "slide_image_mt_mobile": 20,
+        "slide_image_ratio": "square",
+        "slide_image_ratio_mobile": "landscape",
+        "arrow_size": 48,
+        "arrow_size_mobile": 40,
+        "arrow_icon_size": 8,
+        "arrow_icon_size_mobile": 9,
+        "arrow_border_thickness": 1,
+        "arrow_hover_effect": "scale",
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "tabs_border_color": "#ffffff",
+        "tab_color": "#ffffff",
+        "tab_hover_color": "#ffc520",
+        "tab_active_color": "#000000",
+        "tab_bg_color": "#7d1470",
+        "tab_bg_hover_color": "#ede6db",
+        "tab_bg_active_color": "#7d1470",
+        "slide_image_border_color": "#ffffff",
+        "sub_heading_color": "#ffffff",
+        "text_color": "#ffffff",
+        "arrow_color": "#ffffff",
+        "arrow_hover_color": "#ffffff",
+        "arrow_bg_color": "",
+        "arrow_bg_hover_color": "",
+        "arrow_border_color": "#ffffff",
+        "arrow_border_hover_color": "#000000",
+        "heading_color": "#ffffff",
+        "background_color": "#1d193f",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 10,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "rich_text_AtkKyd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dzCXpK": {
+          "type": "heading",
+          "settings": {
+            "heading": "למה לבחור במודינו ?",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dzCXpK"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_Bce9eV": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JfwbkJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "בטוח לילדים",
+            "heading_size": "h1"
+          }
+        },
+        "text_yGpA7w": {
+          "type": "text",
+          "settings": {
+            "text": "<p>יצירה בראש שקט. אנו משתמשים בחומרים לא רעילים וידידותיים לסביבה המבטיחים זמן משחק בטוח לאמן הצעיר שלך.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JfwbkJ",
+        "text_yGpA7w"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_c59b50d7-98da-43b4-95f7-8383fcfe496f.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "background-1",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_RwJGtc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Xa9hpn": {
+          "type": "heading",
+          "settings": {
+            "heading": "למידה בכיף",
+            "heading_size": "h1"
+          }
+        },
+        "text_4txVec": {
+          "type": "text",
+          "settings": {
+            "text": "<p>טיפוח היצירתיות וזיהוי צבעים, הילדים חוקרים מדע באמצעות יצירת פלאי תלת-ממד.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Xa9hpn",
+        "text_4txVec"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4_427c9303-1c61-49a2-bdd8-df702f6ff111.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_6wiQLm": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_V7WBg4": {
+          "type": "heading",
+          "settings": {
+            "heading": "פשוט למשחק",
+            "heading_size": "h1"
+          }
+        },
+        "text_DQVr3G": {
+          "type": "text",
+          "settings": {
+            "text": "<p>זמן משחק פשוט ללא שום קושי בניקוי מה שהופך כל משחק יצירה לפשוט וקל לניקוי<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_V7WBg4",
+        "text_DQVr3G"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/5_bd411a16-1b88-44db-9c0e-fb7bb0ad985c.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_r3xwie": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ppWFWr": {
+          "type": "heading",
+          "settings": {
+            "heading": "אפשרויות אינסופיות",
+            "heading_size": "h1"
+          }
+        },
+        "text_ThLGNa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>יצירתיות חסרת גבולות, מכיוון שהילדים יכולים לשחק עם היצירות שלהם כחיות ימיות או להציג אותן כפריטי עיצוב ייחודיים.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ppWFWr",
+        "text_ThLGNa"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/6_78658411-ffe3-41ce-8051-4c7984c71c0e.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_qFd6KJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_84tghH": {
+          "type": "heading",
+          "settings": {
+            "heading": "בחרו את הערכה שמתאימה לכם ⬇️",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_84tghH"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "ss_pricing_table_3_hMAmFW": {
+      "type": "ss-pricing-table-3",
+      "blocks": {
+        "item_9mV3fE": {
+          "type": "item",
+          "settings": {
+            "budges": "",
+            "image": "shopify:\/\/shop_images\/70_OFF_1100_x_520_px_750_x_750_px_1000_x_600_px_500_x_500_px_1.jpg",
+            "heading": "ערכת מיני",
+            "price_sale": "",
+            "price": "79 שח",
+            "currency": "",
+            "time": "",
+            "elements": "<ul><li>2 בקבוקי ג'ל בצבעים שונים<\/li><li>תבנית אחת <\/li><li>התחרטתם? קבלו את כספכם חזרה תוך 30 יום <\/li><\/ul>",
+            "button_text": "לקנייה",
+            "button_url": "https:\/\/modino.co.il\/cart\/add?id=45223048806658",
+            "Text": "",
+            "active": false
+          }
+        },
+        "item_hyDQj7": {
+          "type": "item",
+          "settings": {
+            "budges": "הכי פופלורי!",
+            "image": "shopify:\/\/shop_images\/2024-06-16_115453.png",
+            "heading": "ערכה בינונית",
+            "price_sale": "220",
+            "price": "179 שח",
+            "currency": "",
+            "time": "",
+            "elements": "<ul><li>5 בקבוקי ג'ל בצבעים שונים<\/li><li>5 תבניות<\/li><li>משלוח חינם <\/li><li>התחרטתם ? קבלו את כספכם חזרה עד 30 יום<\/li><\/ul>",
+            "button_text": "קבל את הדיל הזה👈",
+            "button_url": "https:\/\/modino.co.il\/cart\/add?id=45223048839426",
+            "Text": "",
+            "active": true
+          }
+        },
+        "item_xawLpC": {
+          "type": "item",
+          "settings": {
+            "budges": "הערך הטוב ביותר",
+            "image": "shopify:\/\/shop_images\/2024-06-16_115626.png",
+            "heading": "ערכת פרימיום",
+            "price_sale": "380",
+            "price": "239 שח",
+            "currency": "",
+            "time": "",
+            "elements": "<ul><li>10 בקבוקי ג'ל בצבעים שונים<\/li><li>10 תבניות שונות<\/li><li>משלוח חינם<\/li><li>התחרטתם? קבלו את כספכם חזרה תוף 30 יום<\/li><\/ul>",
+            "button_text": "קבל את הדיל הזה",
+            "button_url": "https:\/\/modino.co.il\/cart\/add?id=45223048872194",
+            "Text": "",
+            "active": false
+          }
+        }
+      },
+      "block_order": [
+        "item_9mV3fE",
+        "item_hyDQj7",
+        "item_xawLpC"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 32,
+        "heading_size_mobile": 34,
+        "heading_height": 130,
+        "heading_align": "center",
+        "sub_heading": "",
+        "sub_heading_custom": false,
+        "sub_heading_font": "josefin_sans_n4",
+        "sub_heading_size": 24,
+        "sub_heading_size_mobile": 18,
+        "sub_heading_height": 190,
+        "sub_heading_align": "center",
+        "sub_heading_mt": 0,
+        "sub_heading_border": true,
+        "table_mt": 0,
+        "table_width": 90,
+        "table_width_mobile": 90,
+        "table_gap": 20,
+        "table_gap_mobile": 20,
+        "card_padding_vertical": 32,
+        "card_padding_horizontal": 20,
+        "card_radius": 34,
+        "card_border_thickness": 3,
+        "card_shadow": false,
+        "budges_custom": false,
+        "budges_font": "josefin_sans_n4",
+        "budges_size": 12,
+        "budges_size_mobile": 12,
+        "budges_height": 100,
+        "budges_padding_vertical": 12,
+        "budges_padding_horizontal": 20,
+        "budges_radius": 20,
+        "budges_border_thickness": 1,
+        "budges_weight": "bold",
+        "budges_top": true,
+        "image_width": 60,
+        "image_width_mobile": 100,
+        "image_mt": 10,
+        "image_radius": 12,
+        "image_border_thickness": 0,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 20,
+        "title_size_mobile": 32,
+        "title_height": 130,
+        "title_align": "center",
+        "title_mt": 10,
+        "price_custom": false,
+        "price_font": "josefin_sans_n4",
+        "price_size": 72,
+        "price_size_mobile": 30,
+        "price_sale_size": 24,
+        "price_sale_size_mobile": 24,
+        "price_height": 130,
+        "price_align": "center",
+        "price_mt": 4,
+        "price_time_under": false,
+        "elements_custom": false,
+        "elements_font": "josefin_sans_n4",
+        "elements_size": 14,
+        "elements_size_mobile": 14,
+        "elements_height": 130,
+        "elements_align": "right",
+        "elements_position": "before",
+        "elements_mt": 22,
+        "elements_gap": 14,
+        "icon_size": 20,
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 14,
+        "button_height": 130,
+        "button_align": "center",
+        "button_mt": 16,
+        "button_padding_vertical": 12,
+        "button_padding_horizontal": 20,
+        "button_radius": 20,
+        "button_border_thickness": 0,
+        "button_width": 100,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 14,
+        "text_size_mobile": 14,
+        "text_height": 130,
+        "text_align": "center",
+        "text_mt": 16,
+        "heading_color": "#ffffff",
+        "heading_other_color": "#ffffff",
+        "sub_heading_color": "#ffffff",
+        "sub_heading_border_color": "#ffffff",
+        "card_bg_color": "#1d193f",
+        "card_bg_active_color": "#1d193f",
+        "card_border_color": "#f3f3f3",
+        "card_border_active_color": "#7d1470",
+        "budges_color": "#545a69",
+        "budges_active_color": "#545a69",
+        "budges_second_color": "#ca73e0",
+        "budges_second_active_color": "#ffffff",
+        "budges_bg_color": "#6b1760",
+        "budges_bg_active_color": "#ffffff",
+        "budges_bg_second_color": "#ffffff",
+        "budges_bg_second_active_color": "#7d1470",
+        "budges_border_color": "#f3f3f3",
+        "budges_border_active_color": "#dddddd",
+        "budges_border_second_color": "#f3f3f3",
+        "budges_border_second_active_color": "#dddddd",
+        "image_bg_color": "#ffffff",
+        "image_bg_active_color": "#dddddd",
+        "image_border_color": "#ffffff",
+        "image_border_active_color": "#ffffff",
+        "title_color": "#ffffff",
+        "title_active_color": "#ffffff",
+        "price_color": "#ffffff",
+        "price_color_gradient": "",
+        "price_active_color": "#ffffff",
+        "price_active_color_gradient": "",
+        "elements_color": "#ffffff",
+        "elements_active_color": "#ffffff",
+        "button_color": "#ffffff",
+        "button_hover_color": "#ffffff",
+        "button_active_color": "#ffffff",
+        "button_active_hover_color": "#ffffff",
+        "button_bg_color": "#ffdc2a",
+        "button_bg_color_gradient": "",
+        "button_bg_hover_color": "#ffc520",
+        "button_bg_hover_color_gradient": "",
+        "button_bg_active_color": "#7d1470",
+        "button_bg_active_color_gradient": "",
+        "button_bg_active_hover_color": "#6b1760",
+        "button_bg_active_hover_color_gradient": "",
+        "button_border_color": "#425466",
+        "button_border_hover_color": "#425466",
+        "button_border_active_color": "#ffdc2a",
+        "button_border_active_hover_color": "#425466",
+        "text_color": "#ffffff",
+        "background_color": "#1d193f",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "ss_steps_4_PXNDeY": {
+      "type": "ss-steps-4",
+      "blocks": {
+        "step_Mrj7NK": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_59ecc9a7-4dae-48ad-8247-fb752c4e463e.webp",
+            "text": "<p>מערבבים חבילה של סידן לקטט עם ליטר מים עד להמסה מלאה.<\/p><p><\/p>"
+          }
+        },
+        "step_WbVf3x": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_dfa895ec-e5c2-42ec-88f6-986785e0cac0.webp",
+            "text": "<p>לטבול את התבנית בתמיסה, ולהבטיח שהיא ספגה היטב.<\/p>"
+          }
+        },
+        "step_CyJNcD": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_5e87f309-e886-4aa2-a2ff-bd022cf575cd.webp",
+            "text": "<p>הסר במהירות את התבנית ומלא אותה בצבעים שבחרת.<\/p><p>תנו לדמיון לפרוח🎈<\/p>"
+          }
+        },
+        "step_pw3CXX": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_2074cb9a-faff-47cf-bb95-3757557bec52.webp",
+            "text": "<p>לאחר הסרת הצעצוע מהתבנית, הוציאו אותו לכמה דקות כדי להמציק את צורתו.<\/p><p> רוצה שהצעצועים יהיו גדולים עוד יותר? תנו לצעצוע לצוף במים במשך כמה שעות, והם יגדלו!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_Mrj7NK",
+        "step_WbVf3x",
+        "step_CyJNcD",
+        "step_pw3CXX"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "<h2>איך זה עובד?<\/h2>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 44,
+        "heading_size_mobile": 38,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "body_gap": 64,
+        "body_gap_mobile": 56,
+        "body_mt": 72,
+        "body_mt_mobile": 50,
+        "use_slider": false,
+        "slider_view_mobile": 1.3,
+        "slider_gap_mobile": 20,
+        "image_radius": 16,
+        "image_border_thickness": 2,
+        "image_ratio": "square",
+        "image_ratio_mobile": "square",
+        "circle_number_size": 40,
+        "circle_number_size_mobile": 40,
+        "number_custom": false,
+        "number_font": "josefin_sans_n4",
+        "number_size": 18,
+        "number_size_mobile": 18,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 18,
+        "text_size_mobile": 18,
+        "text_height": 130,
+        "text_mt": 24,
+        "text_align": "center",
+        "text_align_mobile": "center",
+        "button": "",
+        "button_url": "",
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 16,
+        "button_height": 100,
+        "button_width": 200,
+        "button_width_mobile": 200,
+        "button_mt": 70,
+        "button_mt_mobile": 32,
+        "button_padding_vertical": 14,
+        "button_padding_vertical_mobile": 14,
+        "button_padding_horizontal": 22,
+        "button_padding_horizontal_mobile": 22,
+        "button_radius": 100,
+        "button_border_thickness": 0,
+        "button_align": "center",
+        "button_align_mobile": "center",
+        "button_style": "non_outline",
+        "image_border_color": "#000000",
+        "circle_number_bg_color": "#7d1470",
+        "number_color": "#ffffff",
+        "text_color": "#ffffff",
+        "button_color": "#ffffff",
+        "button_hover_color": "#ffffff",
+        "button_bg_color": "#000000",
+        "button_bg_hover_color": "#000000",
+        "button_border_color": "#000000",
+        "button_border_hover_color": "#000000",
+        "heading_color": "#ffffff",
+        "background_color": "#1d193f",
+        "background_gradient": "",
+        "border_color": "#7d1470",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 130,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "collapsible_content_MLM3pJ": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_CgJ7Cz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "האם קל להכין את הצעצועים, והאם הם מחזיקים בצורתם?",
+            "icon": "question_mark",
+            "row_content": "<p>בהחלט!<\/p><p>מדוניו הופכת את היצירה של הצעצועים  לפשוטה. יצירות אלו לא רק מחזיקות את צורתן בצורה מושלמת אלא גם מציעות שבועות של הנאה אינסופית בזמן משחק. ג'ל הקסם שלנו מבטיח עמידות וכיף שנמשך.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_4DazUU": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "כמה פעמים אפשר להשתמש בערכת שלכם?",
+            "icon": "question_mark",
+            "row_content": "<p>תתכוננו לאינספור שעות של משחק יצירתי!<\/p><p>עם ערכת המודינו, אתה יכול ליצור עד כ-100 חיות קטנות. החומרים העמידים מבטיחים שהצעצועים האלה יישארו במצב מושלם להנאה ממושכת.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_iDgfLe": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "האם החומרים  בטוחים לילדים?",
+            "icon": "question_mark",
+            "row_content": "<p>בטיחות היא בראש סדר העדיפויות שלנו. <\/p><p>אנחנו משתמש בחומרים שהם לא רק בטוחים אלא גם עמידים מאוד. ג'ל הקסם שלנו עשוי מנתרן אלגינט, המופק מאצות ים, בעוד שהאבקה היא סידן לקטט . אתה יכול לסמוך על כך שזמן המשחק של ילדך יהיה מהנה ובטוח כאחד.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HYYjM9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "האם הצעצועים עמידים ?",
+            "icon": "question_mark",
+            "row_content": "<p>אכן!<\/p><p>הצעצועים שלנו נועדו לעמוד לאורך שבועות של משחק פעיל. הם שומרים על צורתם ואיכותם, ומבטיחים את ההנאה של ילדכם לתקופה ממושכת. לא תצטרך לדאוג להחלפות בזמן הקרוב.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_nAVYeM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "כמה זמן יש להשאיר את החיות  בתמיסת המים?",
+            "icon": "question_mark",
+            "row_content": "<p>לקבלת תוצאות אופטימליות, עקוב אחר ההוראות שלנו והשאר את החיות בתמיסת המים למשך כ-15 דקות. עם זאת, אם אתה יכול להשאיר אותם גם למשך 3-4 שעות.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_CgJ7Cz",
+        "collapsible_row_4DazUU",
+        "collapsible_row_iDgfLe",
+        "collapsible_row_HYYjM9",
+        "collapsible_row_nAVYeM"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "שאלות נפוצות",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_whTUL3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JBrA4p": {
+          "type": "heading",
+          "settings": {
+            "heading": "כנראה שתאהבו גם...",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JBrA4p"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 44,
+        "padding_bottom": 0
+      }
+    },
+    "ss_circle_menu_pgLjkJ": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_teiELK": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/9cd25606186b8b98a9f4f39b9fcf2f05.png",
+            "bubble_text": "קוביית הקסם",
+            "bubble_link": ""
+          }
+        },
+        "image_44qc8z": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2024-04-22120855.png",
+            "bubble_text": "כדור הקסם המעופף",
+            "bubble_link": "shopify:\/\/products\/כדור-הקסם-המעופף"
+          }
+        },
+        "image_QaD64i": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2_cc095bcd-ddd5-462b-86b3-ec66031788d0.png",
+            "bubble_text": "קוביות אימוג'י משתנות",
+            "bubble_link": "shopify:\/\/products\/קוביות-אימוגי"
+          }
+        },
+        "image_LewKf6": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/4.jpg",
+            "bubble_text": "ספינר הקסם",
+            "bubble_link": "shopify:\/\/products\/מודינו-ספינר-הקסם"
+          }
+        },
+        "image_jzzpbG": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2024-05-20165331.png",
+            "bubble_text": "פרח הלגו",
+            "bubble_link": "shopify:\/\/products\/פרח-לגו"
+          }
+        },
+        "image_F9jMCq": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2024-05-26122614.png",
+            "bubble_text": "כדור החלל",
+            "bubble_link": "shopify:\/\/products\/מודינו-כדור-חלל"
+          }
+        }
+      },
+      "block_order": [
+        "image_teiELK",
+        "image_44qc8z",
+        "image_QaD64i",
+        "image_LewKf6",
+        "image_jzzpbG",
+        "image_F9jMCq"
+      ],
+      "settings": {
+        "slider_width": 100,
+        "slider_gap": 16,
+        "slider_gap_mobile": 24,
+        "icon_size": 140,
+        "icon_size_mobile": 126,
+        "icon_space": 0,
+        "icon_space_mobile": 0,
+        "icon_border_thickness": 0,
+        "icon_square": false,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 20,
+        "text_size_mobile": 18,
+        "text_height": 130,
+        "text_mt": 8,
+        "icon_border_color": "#ffffff",
+        "icon_border_gradient": "",
+        "text_color": "#ffffff",
+        "background_color": "#1d193f",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "border_gradient": "",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 150,
+        "border_thickness": 0,
+        "lazy": true,
+        "hide_mobile": false,
+        "hide_desktop": false
+      }
+    },
+    "170349922327f3e7dc": {
+      "type": "apps",
+      "blocks": {
+        "6f4c5158-a4fa-4d1b-8868-4f9986222da5": {
+          "type": "shopify:\/\/apps\/vitals\/blocks\/product-reviews\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "6f4c5158-a4fa-4d1b-8868-4f9986222da5"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_eHQQVN",
+    "rich_text_GFgrUV",
+    "multirow_LN3Yze",
+    "rich_text_dUzbGz",
+    "ss_feature_7_MzARTf",
+    "multirow_RtM77R",
+    "image_banner_hLE8Ht",
+    "ss_feature_15_Dn7UFQ",
+    "rich_text_AtkKyd",
+    "image_with_text_Bce9eV",
+    "image_with_text_RwJGtc",
+    "image_with_text_6wiQLm",
+    "image_with_text_r3xwie",
+    "related-products",
+    "rich_text_qFd6KJ",
+    "ss_pricing_table_3_hMAmFW",
+    "ss_steps_4_PXNDeY",
+    "collapsible_content_MLM3pJ",
+    "rich_text_whTUL3",
+    "ss_circle_menu_pgLjkJ",
+    "170349922327f3e7dc"
+  ]
+}

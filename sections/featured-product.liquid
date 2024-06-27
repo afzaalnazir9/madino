@@ -57,50 +57,29 @@
   >
 {%- endif -%}
 
-<section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
+<section class="featured-section-wrapper color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
   <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
     <div class="featured-product product product--{{ section.settings.media_size }} grid grid--1-col gradient color-{{ section.settings.color_scheme }} product--{{ section.settings.media_position }}{% if section.settings.secondary_background == false %} isolate{% endif %} {% if product.media.size > 0 or section.settings.product == blank %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-      <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
-        <media-gallery
-          id="MediaGallery-{{ section.id }}"
-          role="region"
-          aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
-          data-desktop-layout="stacked"
-        >
-          <div
-            id="GalleryViewer-{{ section.id }}"
-            class="product__media-list{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+      {% comment %}
+        <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
+          myproduct1
+          <media-gallery
+            id="MediaGallery-{{ section.id }}"
+            role="region"
+            aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
+            data-desktop-layout="stacked"
           >
-            {%- if section.settings.product != blank -%}
-              {%- if product.selected_or_first_available_variant.featured_media != null -%}
-                {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-                <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-                  {% render 'product-thumbnail',
-                    media: media,
-                    position: 'featured',
-                    loop: section.settings.enable_video_looping,
-                    modal_id: section.id,
-                    xr_button: false,
-                    media_width: media_width,
-                    media_fit: section.settings.media_fit,
-                    constrain_to_viewport: section.settings.constrain_to_viewport
-                  %}
-                </div>
-              {%- endif -%}
-              {%- liquid
-                assign media_to_render = product.featured_media.id
-                for variant in product.variants
-                  assign media_to_render = media_to_render | append: variant.featured_media.id | append: ' '
-                endfor
-              -%}
-              {%- for media in product.media -%}
-                {%- if media_to_render contains media.id
-                  and media.id != product.selected_or_first_available_variant.featured_media.id
-                -%}
+            <div
+              id="GalleryViewer-{{ section.id }}"
+              class="product__media-list{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+            >
+              {%- if section.settings.product != blank -%}
+                {%- if product.selected_or_first_available_variant.featured_media != null -%}
+                  {%- assign media = product.selected_or_first_available_variant.featured_media -%}
                   <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
                     {% render 'product-thumbnail',
                       media: media,
-                      position: forloop.index,
+                      position: 'featured',
                       loop: section.settings.enable_video_looping,
                       modal_id: section.id,
                       xr_button: false,
@@ -110,35 +89,59 @@
                     %}
                   </div>
                 {%- endif -%}
-              {%- endfor -%}
-            {%- else -%}
-              <div class="product__media-item">
-                <div
-                  class="product-media-container global-media-settings gradient{% if section.settings.constrain_to_viewport %} constrain-height{% endif %}"
-                  style="--ratio: 1.0; --preview-ratio: 1.0;"
-                >
-                  {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- liquid
+                  assign media_to_render = product.featured_media.id
+                  for variant in product.variants
+                    assign media_to_render = media_to_render | append: variant.featured_media.id | append: ' '
+                  endfor
+                -%}
+                {%- for media in product.media -%}
+                  {%- if media_to_render contains media.id
+                    and media.id != product.selected_or_first_available_variant.featured_media.id
+                  -%}
+                    <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
+                      {% render 'product-thumbnail',
+                        media: media,
+                        position: forloop.index,
+                        loop: section.settings.enable_video_looping,
+                        modal_id: section.id,
+                        xr_button: false,
+                        media_width: media_width,
+                        media_fit: section.settings.media_fit,
+                        constrain_to_viewport: section.settings.constrain_to_viewport
+                      %}
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- else -%}
+                <div class="product__media-item">
+                  <div
+                    class="product-media-container global-media-settings gradient{% if section.settings.constrain_to_viewport %} constrain-height{% endif %}"
+                    style="--ratio: 1.0; --preview-ratio: 1.0;"
+                  >
+                    {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                  </div>
                 </div>
-              </div>
+              {%- endif -%}
+            </div>
+            {%- if first_3d_model -%}
+              <button
+                class="button button--full-width product__xr-button"
+                type="button"
+                aria-label="{{ 'products.product.xr_button_label' | t }}"
+                data-shopify-xr
+                data-shopify-model3d-id="{{ first_3d_model.id }}"
+                data-shopify-title="{{ product.title | escape }}"
+                data-shopify-xr-hidden
+              >
+                {% render 'icon-3d-model' %}
+                {{ 'products.product.xr_button' | t }}
+              </button>
             {%- endif -%}
-          </div>
-          {%- if first_3d_model -%}
-            <button
-              class="button button--full-width product__xr-button"
-              type="button"
-              aria-label="{{ 'products.product.xr_button_label' | t }}"
-              data-shopify-xr
-              data-shopify-model3d-id="{{ first_3d_model.id }}"
-              data-shopify-title="{{ product.title | escape }}"
-              data-shopify-xr-hidden
-            >
-              {% render 'icon-3d-model' %}
-              {{ 'products.product.xr_button' | t }}
-            </button>
-          {%- endif -%}
-        </media-gallery>
-      </div>
-      <div class="product__info-wrapper grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          </media-gallery>
+        </div>
+      {% endcomment %}
+      <div class="order-2 product__info-wrapper grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <product-info
           id="ProductInfo-{{ section.id }}"
           class="product__info-container"
@@ -513,8 +516,80 @@
         </product-info>
       </div>
       {%- if section.settings.media_position == 'right' -%}
-        <div class="grid__item product__media-wrapper small-hide">
+        <div class="grid__item product__media-wrapper">
           {%- if section.settings.product != blank -%}
+            <div class="gallery-pick-html" style="display: none">
+              {%- if product.selected_or_first_available_variant.featured_media != null -%}
+                {%- assign featured_mediacus = product.selected_or_first_available_variant.featured_media -%}
+                <div
+                  class="swiper-slide"
+                  thumbnail-alt="{{product.selected_or_first_available_variant.featured_image.alt}}"
+                >
+                  <li
+                    id="Slide-{{ section.id }}-{{ featured_media.id }}{{ id_append }}"
+                    class="test1 product__media-item grid__item slider__slide is-active{% if single_media_visible %} product__media-item--single{% endif %}{% if featured_media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains featured_media.src %} product__media-item--variant{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+                    data-media-id="{{ section.id }}-{{ featured_media.id }}"
+                  >
+                    {%- assign media_position = 1 -%}
+                    {% render 'product-thumbnail',
+                      media: featured_mediacus,
+                      media_count: media_count,
+                      position: media_position,
+                      desktop_layout: section.settings.gallery_layout,
+                      mobile_layout: section.settings.mobile_thumbnails,
+                      loop: section.settings.enable_video_looping,
+                      modal_id: section.id,
+                      xr_button: true,
+                      media_width: media_width,
+                      media_fit: section.settings.media_fit,
+                      constrain_to_viewport: section.settings.constrain_to_viewport,
+                      lazy_load: false
+                    %}
+                  </li>
+                </div>
+                {%- for media in product.media -%}
+                  {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+                    <div
+                      class="swiper-slide"
+                      {% if product.selected_or_first_available_variant.featured_image.alt != media.alt
+                        and product.selected_or_first_available_variant.featured_image.alt != blank
+                      %}
+                        style="display: none;"
+                      {% endif %}
+                      thumbnail-alt="{{media.alt}}"
+                    >
+                      <li
+                        id="Slide-{{ section.id }}-{{ media.id }}{{ id_append }}"
+                        class="product__media-item grid__item slider__slide{% if single_media_visible %} product__media-item--single{% endif %}{% if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1 %} is-active{% endif %}{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+                        data-media-id="{{ section.id }}-{{ media.id }}"
+                      >
+                        {%- liquid
+                          assign media_position = media_position | default: 0 | plus: 1
+                          assign lazy_load = false
+                          if media_position > 1
+                            assign lazy_load = true
+                          endif
+                        -%}
+                        {% render 'product-thumbnail',
+                          media: media,
+                          media_count: media_count,
+                          position: media_position,
+                          desktop_layout: section.settings.gallery_layout,
+                          mobile_layout: section.settings.mobile_thumbnails,
+                          loop: section.settings.enable_video_looping,
+                          modal_id: section.id,
+                          xr_button: true,
+                          media_width: media_width,
+                          media_fit: section.settings.media_fit,
+                          constrain_to_viewport: section.settings.constrain_to_viewport,
+                          lazy_load: lazy_load
+                        %}
+                      </li>
+                    </div>
+                  {%- endunless -%}
+                {%- endfor -%}
+              {% endif %}
+            </div>
             <media-gallery
               id="MediaGallery-{{ section.id }}-right"
               role="region"
@@ -523,41 +598,109 @@
             >
               <div
                 id="GalleryViewer-{{ section.id }}-right"
-                class="product__media-list{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+                class="custom-swiper-slider product__media-list{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
               >
-                {%- if product.selected_or_first_available_variant.featured_media != null -%}
+                {%- if product.featured_media != null -%}
                   {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-                  <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-                    {% render 'product-thumbnail',
-                      media: media,
-                      position: 'featured',
-                      loop: section.settings.enable_video_looping,
-                      modal_id: section.id,
-                      xr_button: false,
-                      media_width: media_width,
-                      media_fit: section.settings.media_fit,
-                      constrain_to_viewport: section.settings.constrain_to_viewport
-                    %}
+
+                  <style>
+                    .featured-section-wrapper .swiper {
+                      width: 100%;
+                      height: 100%;
+                      padding-bottom: 23px;
+                    }
+
+                    .featured-section-wrapper .swiper-slide {
+                      text-align: center;
+                      font-size: 18px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      color: black;
+                    }
+
+                    .featured-section-wrapper .swiper-slide img {
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+                    .featured-section-wrapper .swiper-button-next, .featured-section-wrapper .swiper-button-prev {
+                      background-image: unset;
+                    }
+                    .featured-section-wrapper .swiper-button-next::after, .featured-section-wrapper .swiper-button-prev::after {
+                      display: none;
+                    }
+                    .featured-section-wrapper .swiper-pagination {
+                      position: relative;
+                      top: 12px;
+                      color: white;
+                    }
+                    .featured-section-wrapper .swiper-pagination .swiper-pagination-bullet {
+                      background: white;
+                    }
+                  </style>
+                  <div dir="ltr" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      {% if media != null %}
+                        <div
+                          class="swiper-slide"
+                          thumbnail-alt="{{product.selected_or_first_available_variant.featured_image.alt}}"
+                        >
+                          <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
+                            {% render 'product-thumbnail',
+                              media: media,
+                              position: 'featured',
+                              loop: section.settings.enable_video_looping,
+                              modal_id: section.id,
+                              xr_button: false,
+                              media_width: media_width,
+                              media_fit: section.settings.media_fit,
+                              constrain_to_viewport: section.settings.constrain_to_viewport
+                            %}
+                          </div>
+                        </div>
+                      {% endif %}
+                      {%- for media in product.media -%}
+                        {%- if media.id != product.selected_or_first_available_variant.featured_media.id
+                          and media.media_type != null
+                        -%}
+                          <div
+                            class="swiper-slide"
+                            {% if product.selected_or_first_available_variant.featured_image.alt != media.alt
+                              and product.selected_or_first_available_variant.featured_image.alt != blank
+                            %}
+                              style="display: none;"
+                            {% endif %}
+                            thumbnail-alt="{{media.alt}}"
+                          >
+                            <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
+                              {% render 'product-thumbnail',
+                                media: media,
+                                position: forloop.index,
+                                loop: section.settings.enable_video_looping,
+                                modal_id: section.id,
+                                xr_button: false,
+                                media_width: media_width,
+                                media_fit: section.settings.media_fit,
+                                constrain_to_viewport: section.settings.constrain_to_viewport
+                              %}
+                            </div>
+                          </div>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </div>
+                    <div class="swiper-pagination"></div>
                   </div>
-                {%- endif -%}
-                {%- for media in product.media -%}
-                  {%- if media_to_render contains media.id
-                    and media.id != product.selected_or_first_available_variant.featured_media.id
-                  -%}
-                    <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-                      {% render 'product-thumbnail',
-                        media: media,
-                        position: forloop.index,
-                        loop: section.settings.enable_video_looping,
-                        modal_id: section.id,
-                        xr_button: false,
-                        media_width: media_width,
-                        media_fit: section.settings.media_fit,
-                        constrain_to_viewport: section.settings.constrain_to_viewport
-                      %}
+                  {%- if media != null and product.media.size > 0 -%}
+                    <div class="swiper-button-next">
+                      <img src="{{ 'right-arrow.png' | asset_url }}" alt="" srcset="">
+                    </div>
+                    <div class="swiper-button-prev">
+                      <img src="{{ 'left-arrow.png' | asset_url }}" alt="" srcset="">
                     </div>
                   {%- endif -%}
-                {%- endfor -%}
+                {%- endif -%}
               </div>
               {%- if first_3d_model -%}
                 <button

@@ -973,16 +973,30 @@ class VariantSelects extends HTMLElement {
   }
 
   filterImgVariant() {
-    console.log('thumbnail-updated :>> ', this.currentVariant)
     if(this.currentVariant.featured_image && this.currentVariant.featured_image.alt) {
+      $(".mySwiper .swiper-wrapper").html("");
       // show only thumbnail for selected variant
-      document.querySelectorAll('[thumbnail-alt]').forEach(img => img.style.display = 'none')
+      document.querySelectorAll('[thumbnail-alt]').forEach((img) => {
+        img.style.display = 'none';
+        img.classList.remove('needs-to-be-active');
+      })
       const currentImgAlt = this.currentVariant.featured_image.alt
       const thumbnailSelector = `[thumbnail-alt = '${currentImgAlt}']`
-      document.querySelectorAll(thumbnailSelector).forEach(img => img.style.display = 'block')
+      const selectedTumb = document.querySelectorAll(thumbnailSelector)
+      selectedTumb.forEach((img) => {
+        img.style.display = 'block';
+        img.classList.add('needs-to-be-active');
+      })
     } else {
       // show all thumbnails
-      document.querySelectorAll('[thumbnail-alt]').forEach(img => img.style.display = 'block')
+      document.querySelectorAll('[thumbnail-alt]').forEach((img) => {
+        img.style.display = 'block';
+        img.classList.add('needs-to-be-active');
+      })
+    }
+    const targetSection = document.querySelector('.mySwiper');    
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
     }
   }
 

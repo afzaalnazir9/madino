@@ -40,7 +40,7 @@
     "card_color_scheme": "background-1",
     "card_border_thickness": 0,
     "card_border_opacity": 10,
-    "card_corner_radius": 0,
+    "card_corner_radius": 8,
     "card_shadow_opacity": 0,
     "card_shadow_horizontal_offset": 0,
     "card_shadow_vertical_offset": 4,
@@ -143,26 +143,8 @@
 
     ],
     "blocks": {
-      "5134484470793087125": {
-        "type": "shopify:\/\/apps\/vitals\/blocks\/app-embed\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "8539929900085638506": {
-        "type": "shopify:\/\/apps\/gatio-rtl-translations\/blocks\/gatio\/56e1c854-a630-4229-99fa-24a88223d36b",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "8208493610395315515": {
         "type": "shopify:\/\/apps\/dondy-whatsapp-chat-marketing\/blocks\/app-block\/7f5a70cb-e171-4cc7-ac02-e2220203abd6",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "14952540001915115444": {
-        "type": "shopify:\/\/apps\/upcart-cart-drawer\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
         "disabled": false,
         "settings": {
         }
@@ -179,8 +161,26 @@
         "settings": {
         }
       },
-      "2104245418471043333": {
-        "type": "shopify:\/\/apps\/17track-order-tracking-paysync\/blocks\/app-embed\/1519e068-e330-4e0b-92dd-0a3263bfceda",
+      "5134484470793087125": {
+        "type": "shopify:\/\/apps\/vitals\/blocks\/app-embed\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "8539929900085638506": {
+        "type": "shopify:\/\/apps\/gatio-rtl-translations\/blocks\/gatio\/56e1c854-a630-4229-99fa-24a88223d36b",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "17676059084223943535": {
+        "type": "shopify:\/\/apps\/triplewhale\/blocks\/triple_pixel_snippet\/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14952540001915115444": {
+        "type": "shopify:\/\/apps\/upcart-cart-drawer\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
         "disabled": false,
         "settings": {
         }

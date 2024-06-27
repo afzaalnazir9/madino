@@ -29,45 +29,9 @@
       ],
       "settings": {
       }
-    },
-    "b613e311-b0ee-44a5-9efa-b158d55d21a8": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/iStock-1183183791.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "right",
-        "color_scheme": "background-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "92e4af83-a15f-454e-a494-4ee61a391e6b": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/bored-lazy-worker-with-his-hands-wasting-time-playing-with-pens.jpg_s_1024x1024_w_is_k_20_c_eWQxZK4DLsWOvMI20Q0vT4gFseXmRnwmZhOufptMpx0.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
     }
   },
   "order": [
-    "main",
-    "b613e311-b0ee-44a5-9efa-b158d55d21a8",
-    "92e4af83-a15f-454e-a494-4ee61a391e6b"
+    "main"
   ]
 }

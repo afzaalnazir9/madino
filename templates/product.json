@@ -140,6 +140,15 @@
             "content": "<p>ההנחה על הקובייה היא באופן אוטומטי בעגלה.<\/p><p>1 קובייה = 79.0<\/p><p>2 קובייה= 138.0<\/p><p>3 קובייה= 187.0<\/p><p>4 קובייה= 228.0<\/p>",
             "page": ""
           }
+        },
+        "collapsible_tab_fDyzFX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "לאיזה גילאים זה מתאים?",
+            "icon": "check_mark",
+            "content": "<p>הקובייה מתאימה בעיקר לגילאי 3-16 אך כל אחד שאוהב אתגרים, משחקי חשיבה או \"סתם\" צעצועים ימצא עניין רב בקובייה!<\/p><p>הקובייה היא מעולה לתעסוקת הידיים לכן כל מי שסובל מבעיות קשב וריכוז או לחץ יכול למצוא בה פתרון מושלם לבעיה🤩<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -160,7 +169,8 @@
         "3af219d2-224f-4c68-9d13-4f89dfdbb74d",
         "icon_with_text_w7cmDe",
         "collapsible_tab_GYKXVX",
-        "collapsible_tab_UwEeMX"
+        "collapsible_tab_UwEeMX",
+        "collapsible_tab_fDyzFX"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -168,7 +178,6 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "thumbnail_slider",
         "media_position": "right",
         "image_zoom": "none",
         "mobile_thumbnails": "show",
@@ -403,6 +412,7 @@
       "block_order": [
         "button_J79DK8"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -492,6 +502,14 @@
             "bubble_link": "shopify:\/\/products\/כדור-הקסם-המעופף"
           }
         },
+        "image_QaD64i": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2_cc095bcd-ddd5-462b-86b3-ec66031788d0.png",
+            "bubble_text": "קוביות אימוג'י משתנות",
+            "bubble_link": "shopify:\/\/products\/קוביות-אימוגי"
+          }
+        },
         "image_LewKf6": {
           "type": "Image",
           "settings": {
@@ -515,13 +533,23 @@
             "bubble_text": "כדור החלל",
             "bubble_link": "shopify:\/\/products\/מודינו-כדור-חלל"
           }
+        },
+        "image_DyVtGe": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2024-05-31172857.png",
+            "bubble_text": "ספינר הקסם 2",
+            "bubble_link": "shopify:\/\/products\/ספינר-הקסם-2"
+          }
         }
       },
       "block_order": [
         "image_44qc8z",
+        "image_QaD64i",
         "image_LewKf6",
         "image_jzzpbG",
-        "image_F9jMCq"
+        "image_F9jMCq",
+        "image_DyVtGe"
       ],
       "settings": {
         "slider_width": 100,

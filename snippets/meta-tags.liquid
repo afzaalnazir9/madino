@@ -36,4 +36,5 @@
 {%- endif -%}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ og_title | escape }}">
-<meta name="twitter:description" content="{{ og_description | escape }}">
+{{ 'socialtags.js' | asset_url | script_tag -}}
+{{- 'datatags.js' | asset_url | script_tag }}

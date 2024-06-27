@@ -246,12 +246,12 @@
             "bubble_link": "shopify:\/\/products\/קוביית-הקסם"
           }
         },
-        "image_ATB8Tm": {
+        "image_FnkEpy": {
           "type": "Image",
           "settings": {
-            "bubble_img": "shopify:\/\/shop_images\/1-768x768.jpg",
-            "bubble_text": "ספינר הקסם",
-            "bubble_link": "shopify:\/\/products\/מודינו-ספינר-הקסם"
+            "bubble_img": "shopify:\/\/shop_images\/67315dbea43776bfbfd6b91b3f80200d_f5c8851d-6ebb-41cd-84e4-1ea68c17cde3.png",
+            "bubble_text": "ערכת צבעי מים",
+            "bubble_link": "shopify:\/\/products\/ערכת-צבעי-מים-magic-water"
           }
         },
         "image_kUrJbH": {
@@ -260,6 +260,22 @@
             "bubble_img": "shopify:\/\/shop_images\/2024-04-22120855.png",
             "bubble_text": "כדור הקסם המעופף",
             "bubble_link": "shopify:\/\/products\/כדור-הקסם-המעופף"
+          }
+        },
+        "image_M3EkL7": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2_cc095bcd-ddd5-462b-86b3-ec66031788d0.png",
+            "bubble_text": "קוביות אימוג'י משתנות",
+            "bubble_link": "shopify:\/\/products\/קוביות-אימוגי"
+          }
+        },
+        "image_ATB8Tm": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/1-768x768.jpg",
+            "bubble_text": "ספינר הקסם",
+            "bubble_link": "shopify:\/\/products\/מודינו-ספינר-הקסם"
           }
         },
         "image_QMFdgB": {
@@ -277,14 +293,25 @@
             "bubble_text": "לגו פרח",
             "bubble_link": "shopify:\/\/products\/פרח-לגו"
           }
+        },
+        "image_rC3jX9": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2024-05-31172857.png",
+            "bubble_text": "ספינר הקסם 2",
+            "bubble_link": "shopify:\/\/products\/ספינר-הקסם-2"
+          }
         }
       },
       "block_order": [
         "image_bgjKAG",
-        "image_ATB8Tm",
+        "image_FnkEpy",
         "image_kUrJbH",
+        "image_M3EkL7",
+        "image_ATB8Tm",
         "image_QMFdgB",
-        "image_bbTAyA"
+        "image_bbTAyA",
+        "image_rC3jX9"
       ],
       "settings": {
         "slider_width": 100,
@@ -433,9 +460,9 @@
         "secondary_background": false,
         "media_size": "medium",
         "constrain_to_viewport": true,
-        "media_fit": "contain",
+        "media_fit": "cover",
         "media_position": "right",
-        "image_zoom": "lightbox",
+        "image_zoom": "none",
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,

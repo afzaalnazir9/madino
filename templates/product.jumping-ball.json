@@ -125,6 +125,15 @@
         "collapsible_tab_GYKXVX": {
           "type": "collapsible_tab",
           "settings": {
+            "heading": "לאיזה גילאים זה מתאים?",
+            "icon": "check_mark",
+            "content": "<p>כדור החלל מתאים בעיקר לגילאי 5-18, אך הוא יכול למצוא מקום שקט לכל הסובלים מבעיות הקשב והריכוז או לחץ וסטרס.<\/p><p>הכדור גם יכול למצוא חן בעיני כל מי שרוצה \"סתם\" תעסוקה לידיים או סתם לנקות את המחשבות בראש😎<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_9kbxQQ": {
+          "type": "collapsible_tab",
+          "settings": {
             "heading": "תוך כמה זמן המשלוח שלי מגיע?",
             "icon": "truck",
             "content": "<p>זמן המשלוח הוא <strong>בד\"כ <\/strong>5-14 ימי עסקים. ייתכן ויהיו עיכובים בגלל המצב הביטחוני במדינה, עם ישראל חי!<\/p>",
@@ -149,7 +158,8 @@
         "c45b8881-7122-43fd-ab8e-838f0cf71183",
         "3af219d2-224f-4c68-9d13-4f89dfdbb74d",
         "icon_with_text_w7cmDe",
-        "collapsible_tab_GYKXVX"
+        "collapsible_tab_GYKXVX",
+        "collapsible_tab_9kbxQQ"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -157,7 +167,6 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "thumbnail",
         "media_position": "right",
         "image_zoom": "none",
         "mobile_thumbnails": "hide",

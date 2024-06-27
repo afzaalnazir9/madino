@@ -3626,3 +3626,8 @@ details-disclosure > details {
     display: none;
 }
 
+
+.custom-swiper-slider .swiper-button-next img, .custom-swiper-slider .swiper-button-prev img, .my-swiper-main .swiper-button-next img, .my-swiper-main .swiper-button-prev img {
+  width: 30px;
+  height: 30px;
+}

@@ -4,6 +4,16 @@
   padding-bottom: 0;
 }
 
+.featured-section-wrapper .featured-product .product__media-list {
+  position: relative;
+}
+
+@media screen and (max-width: 749px) {
+  .featured-section-wrapper .featured-product.product .order-2 {
+    order: 2;
+  }  
+}
+
 .featured-product .product-media-container {
   margin-bottom: var(--media-shadow-vertical-offset);
   max-width: 100%;

@@ -41,17 +41,6 @@
             "text_style": "body"
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "vitals_ub_volume_discounts_4Jnxjt": {
-          "type": "shopify:\/\/apps\/vitals\/blocks\/ub-volume-discounts\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
-          "settings": {
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -130,6 +119,15 @@
             "content": "<p>זמן המשלוח הוא <strong>בד\"כ <\/strong>5-14 ימי עסקים. ייתכן ויהיו עיכובים בגלל המצב הביטחוני במדינה, עם ישראל חי!<\/p>",
             "page": ""
           }
+        },
+        "collapsible_tab_6MDQpb": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "לאיזה גילאים הכדור מתאים?",
+            "icon": "check_mark",
+            "content": "<p>כדור הקסם המעופף מתאים בעיקר לגילאי 5-18, אך הוא יכול למצוא מקום שקט לכל הסובלים מבעיות הקשב והריכוז או לחץ וסטרס.<\/p><p>הכדור גם יכול למצוא חן בעיני כל מי שרוצה \"סתם\" תעסוקה לידיים או סתם לנקות את המחשבות בראש😎<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -139,8 +137,6 @@
         "9c95162a-4488-473a-860f-3b85aab21363",
         "473970a4-e61d-4a3f-af1f-4b8018c1c889",
         "2c79532f-67f6-4ad0-aed7-f51890959124",
-        "variant_picker",
-        "vitals_ub_volume_discounts_4Jnxjt",
         "quantity_selector",
         "buy_buttons",
         "description",
@@ -149,18 +145,18 @@
         "c45b8881-7122-43fd-ab8e-838f0cf71183",
         "3af219d2-224f-4c68-9d13-4f89dfdbb74d",
         "icon_with_text_w7cmDe",
-        "collapsible_tab_GYKXVX"
+        "collapsible_tab_GYKXVX",
+        "collapsible_tab_6MDQpb"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-3b990cbc-d370-4b8e-96f6-7110226ea607",
         "media_size": "medium",
         "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "gallery_layout": "thumbnail",
+        "media_fit": "cover",
         "media_position": "right",
         "image_zoom": "none",
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": true,
         "padding_top": 12,
@@ -201,6 +197,7 @@
         },
         "button_miKgTP": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "יצירת קשר📞",
             "button_link": "shopify:\/\/pages\/contact",
@@ -315,6 +312,7 @@
       "blocks": {
         "button_J79DK8": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "אודתינו📖",
             "button_link": "shopify:\/\/pages\/אודותינו",
@@ -371,6 +369,14 @@
             "bubble_link": "shopify:\/\/products\/קוביית-הקסם"
           }
         },
+        "image_BLewbz": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/1_8c870277-be16-4e6c-84e8-aba76ee5f270.png",
+            "bubble_text": "ערכת צבעי מים",
+            "bubble_link": "shopify:\/\/products\/ערכת-צבעי-מים-magic-water"
+          }
+        },
         "image_cARxhU": {
           "type": "Image",
           "settings": {
@@ -394,13 +400,41 @@
             "bubble_text": "סניפר הקסם",
             "bubble_link": "shopify:\/\/products\/מודינו-ספינר-הקסם"
           }
+        },
+        "image_ntgjmr": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/1_03b96220-ea6a-4d24-8b9d-87dd9d753c4e.png",
+            "bubble_text": "קוביות אימוג'י",
+            "bubble_link": "shopify:\/\/products\/קוביות-אימוגי"
+          }
+        },
+        "image_FP4BKy": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/2024-05-31172857.png",
+            "bubble_text": "ספינר הקסם 2",
+            "bubble_link": "shopify:\/\/products\/ספינר-הקסם-2"
+          }
+        },
+        "image_hD3EpB": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/70_OFF_1100_x_520_px_750_x_750_px_1000_x_600_px_500_x_500_px_8_3004f79b-040c-46af-8ea6-132c6bb59ec4.jpg",
+            "bubble_text": "ערכת צבעי מים",
+            "bubble_link": "shopify:\/\/products\/ערכת-צבעי-מים-magic-water"
+          }
         }
       },
       "block_order": [
         "image_Ngikje",
+        "image_BLewbz",
         "image_cARxhU",
         "image_eYyGX7",
-        "image_pVJVrb"
+        "image_pVJVrb",
+        "image_ntgjmr",
+        "image_FP4BKy",
+        "image_hD3EpB"
       ],
       "settings": {
         "slider_width": 100,

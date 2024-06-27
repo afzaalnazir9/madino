@@ -523,6 +523,9 @@
           },
           "invalid": {
             "reduction_code": "הכנס קוד הנחה תקף"
+          },
+          "outdated": {
+            "shipping_method": "שיטת המשלוח עבור ההזמנה שלך שונתה. אנא בדוק\/י את בחירתך "
           }
         },
         "redirection_notice": "אחרי שתלחצו \"{{buttonLabel}}\", תועברו לדף מאובטח-  להמשך תשלום"
@@ -665,7 +668,9 @@
         "discount_order_stacking": {
           "one": "קוד קופון",
           "other": "קוד קופון"
-        }
+        },
+        "calculating_shipping": "מחשב..",
+        "calculating": "מחשב.."
       },
       "alternative_payment_method_banner": {
         "express_checkout": "תשלום מהיר",
@@ -715,7 +720,8 @@
         "same_billing_address_checkbox_label": "השתמש בכתובת למשלוח ככתובת לחיוב",
         "fact_billing_address_label": "כתובת לחיוב",
         "ends_with_label": "נגמר ב- {{ last_digits }}",
-        "credit_card_vaulting_sign_in_banner_button_label": "כניסה לחשבונך"
+        "credit_card_vaulting_sign_in_banner_button_label": "כניסה לחשבונך",
+        "waiting_on_taxes_notice": "מחשב מס"
       },
       "failed_payment": {
         "page_title": "התשלום לא עבר נסה שוב",
@@ -829,7 +835,8 @@
         }
       },
       "shipping_errors": {
-        "empty_state": "הכנס כתובת משלוח על מנת לראות שיטות משלוח לכתובת שלך"
+        "empty_state": "הכנס כתובת משלוח על מנת לראות שיטות משלוח לכתובת שלך",
+        "shipping_method": "שיטת המשלוח עבור ההזמנה שלך שונתה. אנא בדוק\/י את בחירתך ונסי\/ה שוב"
       },
       "order_payment_collection": {
         "changes_summary": {

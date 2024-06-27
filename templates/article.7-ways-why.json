@@ -1,0 +1,268 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "disabled": true,
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "rich_text_GQA3QN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_n6GVYU": {
+          "type": "heading",
+          "settings": {
+            "heading": "7 סיבות למה קוביית הקסם של מודינו היא <span style=\"text-decoration:underline\">הצעצוע המושלם<\/span> לילד שלך!",
+            "heading_size": "h1"
+          }
+        },
+        "text_e7mBkk": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>אם נמאס לכם מצעצועים חסרי ערך מוסף או צעצועים שנזרקים אחרי שעתיים קוביית הקסם היא בשבילכם!<\/h4>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_n6GVYU",
+        "text_e7mBkk"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "multirow_nGiqpy": {
+      "type": "multirow",
+      "blocks": {
+        "row_TqUQ4f": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_ec586ca8-4cb0-4450-a7d0-aacd62a8a577.png",
+            "caption": "",
+            "heading": "יעילה בהתמודדות עם בעיות הקשב והריכוז",
+            "text": "<h3>הניסיון ליצור צורות מורכבות מצריך ריכוז והתמדה, דבר שתורם לשיפור היכולת להתמיד במשימות מורכבות ולהישאר מרוכז לארוך זמן ובכך יעיל מאוד בהתמודדות עם בעיות הקשב והריכוז.<\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_L93f7M": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_83d0c4bc-7a6d-4484-9717-3d0ba4bb0f13.png",
+            "caption": "",
+            "heading": "תגידו \"יפה\" שלום למסכים!",
+            "text": "<h3>הקובייה שלנו נותנת תעסוקה חינוכית וכיפית אשר מציעה תחלופה אטרקטיבית ויעילה למסכים.<\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_aTWpMf": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_3bdc5439-229c-4cac-afd2-3f85f5f35eab.png",
+            "caption": "",
+            "heading": "המתנה מושלמת לילדים שלכם",
+            "text": "<h3>אם נמאס לכם לזרוק כל שבוע צעצועים חסרי משמעות לפח יש לנו את הפתרון עבורכם! קוביית הקסם היא מתנה מושלמת המשלבת הנאה וחינוך. היא לא רק מעניקה שעות של כיף, אלא גם מחזקת כישורים חשובים כמו יצירתיות, חשיבה לוגית ומוטוריקה עדינה, מה שהופך אותה לבחירה מצוינת למתנה לכל גיל.<\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_rEzgbm": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_db7e108d-b924-46ee-9e9f-bf8a0d6db2fb.png",
+            "caption": "",
+            "heading": "פיתוח החשיבה והיצירתיות",
+            "text": "<h3>קוביית הקסם מעודדת את המשתמש לחקור ולהתנסות בדרכים שונות ליצור צורות מורכבות. התהליך מפתח את היכולת לחשוב מחוץ לקופסה.<\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_9wihPJ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_b5d10d56-38e7-48e0-9511-88f0d5e1132d.png",
+            "caption": "",
+            "heading": "מפחית חרדה וסטרס",
+            "text": "<h3>המשחק המוטורי בקובייה נותן תעסוקה לידיים המרגיעות את הלחץ והסטרס ומקנות לילדים רוגע ונינוחות.<\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_TkeGBK": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6.png",
+            "caption": "",
+            "heading": "כיף שלא נגמר",
+            "text": "<h3>קוביית הקסם של מודינו תספק שעות של הנאה וכיף, ניתן ליצור מהקובייה מעל 70 צורות שונות באמצעות יכולת החשיבה מחוץ לקופסא, חשוב להזכיר שזה לא נגמר בקובייה אחת, תוכלו לשלב קוביות ולהגיע למגוון מבנים מורכבים וכמות צורות אין סופית<\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_JCGPMT": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7.png",
+            "caption": "",
+            "heading": "<strong>מעל 5,000 לקוחות מרוצים בישראל<\/strong>",
+            "text": "<h3>בתמונה ניתן לראות חלק מהביקורות של הלקוחות שלנו על קובית הקסם שלנו. <br\/>מהמחקר שעשינו בחודשיים האחרונים עם הורים הרכשו לילדיהם את הקובייה:<\/h3><h3><br\/><span style=\"text-decoration:underline\"><strong>95%<\/strong><\/span> טענו שהקובייה עזרה לילדיהם עם בעיות הקשב והריכוז וחל שיפור ניכר בלימודים. <br\/><span style=\"text-decoration:underline\"><strong>98%<\/strong><\/span> טענו שילדיהם מצאו תחביב נוסף המקנה להם תחלופה מהמסכים.<br\/><span style=\"text-decoration:underline\"><strong>97%<\/strong><\/span> טענו שילדהם מאוד שמחו לקבל את הקובייה כמתנה ואף הגדירו אותה כ\"המתנה המושלמת<br\/> <\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_TqUQ4f",
+        "row_L93f7M",
+        "row_aTWpMf",
+        "row_rEzgbm",
+        "row_9wihPJ",
+        "row_TkeGBK",
+        "row_JCGPMT"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_iyTHYq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7eyryt": {
+          "type": "heading",
+          "settings": {
+            "heading": "קוביית הקסם שלנו",
+            "heading_size": "h1"
+          }
+        },
+        "text_KWEUeP": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>חושבים שתוכלו לייצור 72 צורות ?<\/h3>"
+          }
+        },
+        "text_3HiyGQ": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>מחיר חד פעמי <span style=\"text-decoration:underline\">לזמן מוגבל<\/span><\/h2>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7eyryt",
+        "text_KWEUeP",
+        "text_3HiyGQ"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_pQeEf3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Nfd38n": {
+          "type": "heading",
+          "settings": {
+            "heading": "⭐⭐⭐⭐ מעל 5,000 לקוחות מרוצים",
+            "heading_size": "h2"
+          }
+        },
+        "text_PktMeB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>🙏מתאים לכולם <\/p><p>💡מפתח את החשיבה והיצרתיות<\/p><p>🧠 יעיל לבעיות קשב וריכוז<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_pDtb3Q": {
+          "type": "button",
+          "settings": {
+            "button_label": "אני מעוניין! 👈🏼",
+            "button_link": "shopify:\/\/products\/קוביית-הקסם",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Nfd38n",
+        "text_PktMeB",
+        "button_pDtb3Q"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/70_3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_GQA3QN",
+    "multirow_nGiqpy",
+    "rich_text_iyTHYq",
+    "image_with_text_pQeEf3"
+  ]
+}

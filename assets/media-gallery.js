@@ -33,7 +33,12 @@ if (!customElements.get('media-gallery')) {
         this.elements.viewer.querySelectorAll('[data-media-id]').forEach((element) => {
           element.classList.remove('is-active');
         });
-        activeMedia.classList.add('is-active');
+        if(activeMedia) {
+          activeMedia.classList.add('is-active');
+        }
+        else {
+          return
+        }
 
         if (prepend) {
           activeMedia.parentElement.prepend(activeMedia);

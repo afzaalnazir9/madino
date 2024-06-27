@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 
-{%- liquid 
+{%- liquid
   assign padding_horizontal = section.settings.padding_horizontal
   assign padding_horizontal_mobile = section.settings.padding_horizontal_mobile
   assign padding_top = section.settings.padding_top
@@ -62,18 +62,17 @@
 -%}
 
 {%- style -%}
-
   {{  heading_font | font_face: font_display: 'swap' }}
   {{  item_heading_font | font_face: font_display: 'swap' }}
   {{  item_text_font | font_face: font_display: 'swap' }}
-  
+
   .section-{{ section.id }} {
     border-top: solid {{ border_color }} {{ border_thickness }}px;
     border-bottom: solid {{ border_color }} {{ border_thickness }}px;
     margin-top: {{ margin_top | times: 0.75 | round: 0 }}px;
     margin-bottom: {{ margin_bottom | times: 0.75 | round: 0 }}px;
   }
-  
+
   .section-{{ section.id }}-settings {
     margin: 0 auto;
     padding-top: {{ padding_top | times: 0.75 | round: 0 }}px;
@@ -179,14 +178,14 @@
     width: 30px !important;
     border-radius: 7px !important;
   }
-  
+
   @media(min-width: 1024px) {
 
     .section-{{ section.id }} {
       margin-top: {{ margin_top }}px;
       margin-bottom: {{ margin_bottom }}px;
     }
-    
+
     .section-{{ section.id }}-settings {
       padding: 0 5rem;
       padding-top: {{ padding_top }}px;
@@ -231,7 +230,6 @@
       font-size: {{ item_text_size }}px;
     }
   }
-  
 {%- endstyle -%}
 
 {% unless full_width %}
@@ -272,7 +270,7 @@
   </style>
 {% endif %}
 
-{% if items_style == "stack" %}
+{% if items_style == 'stack' %}
   <style>
     .feature-slider-{{ section.id }} {
       display: none !important;
@@ -287,7 +285,7 @@
       .feature-slider-{{ section.id }} {
         display: none !important;
       }
-      
+
       .feature-items-{{ section.id }} {
         display: grid !important;
       }
@@ -380,21 +378,24 @@
   {% endfor %}
 {% endcapture %}
 
-<div class="section-{{ section.id }} feature-{{ section.id }}" style="background-color:{{ background_color }}; background-image: {{ background_gradient }};">
-    <div class="section-{{ section.id }}-settings ">
-      {% if heading != blank %}
-        <h2 class="feature-heading-{{ section.id }}">{{ heading }}</h2>
-      {% endif %}
-      <div class="feature-items-{{ section.id }}">
+<div
+  class="section-{{ section.id }} feature-{{ section.id }}"
+  style="background-color:{{ background_color }}; background-image: {{ background_gradient }};"
+>
+  <div class="section-{{ section.id }}-settings ">
+    {% if heading != blank %}
+      <h2 class="feature-heading-{{ section.id }}">{{ heading }}</h2>
+    {% endif %}
+    <div class="feature-items-{{ section.id }}">
+      {{ content }}
+    </div>
+    <div class="feature-slider-{{ section.id }} swiper">
+      <div class="swiper-wrapper">
         {{ content }}
       </div>
-      <div class="feature-slider-{{ section.id }} swiper">
-        <div class="swiper-wrapper">
-          {{ content }}
-        </div>
-        <div class="feature-pagination-{{ section.id }} swiper-pagination"></div>
-      </div>
+      <div class="feature-pagination-{{ section.id }} swiper-pagination"></div>
     </div>
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
@@ -413,752 +414,751 @@
   }
 
   document.addEventListener('DOMContentLoaded', initFeature7);
-  
+
   if (Shopify.designMode) {
      document.addEventListener('shopify:section:unload', initFeature7);
      document.addEventListener('shopify:section:load', initFeature7);
   }
-  
 </script>
 
 {% schema %}
-  {
-    "name": "SS - Feature #7",
-    "settings": [
-      {
-        "type": "header",
-        "content": "Heading"
-      },
-      {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading"
-      },
-      {
-        "type": "checkbox",
-        "id": "heading_custom",
-        "label": "Use Custom Font",
-        "default": false
-      },
-      {
-        "type": "font_picker",
-        "id": "heading_font",
-        "label": "Heading Font Family",
-        "default": "josefin_sans_n4"
-      },
-      {
-        "type": "range",
-        "id": "heading_size",
-        "min": 0,
-        "max": 72,
-        "step": 2,
-        "unit": "px",
-        "label": "Heading Size",
-        "default": 34
-      },
-      {
-        "type": "range",
-        "id": "heading_size_mobile",
-        "min": 0,
-        "max": 72,
-        "step": 2,
-        "unit": "px",
-        "label": "Heading Size - Mobile",
-        "default": 30
-      },
-      {
-        "type": "range",
-        "id": "heading_height",
-        "min": 50,
-        "max": 200,
-        "step": 10,
-        "unit": "%",
-        "label": "Heading Line Height",
-        "default": 130
-      },
-      {
-        "type": "select",
-        "id": "heading_align",
-        "label": "Heading Text Align",
-        "default": "center",
-        "options": [
-          {
-            "label": "Left",
-            "value": "left"
-          },
-          {
-            "label": "Center",
-            "value": "center"
-          },
-          {
-            "label": "Right",
-            "value": "right"
-          }
-        ]
-      },
-      {
-        "type": "header",
-        "content": "Items Settings"
-      },
-      {
-         "type": "range",
-         "id": "items_row",
-         "min": 1,
-         "max": 6,
-         "step": 1,
-         "label": "Item Per Row - Desktop",
-         "default": 4
-      },
-      {
-         "type": "range",
-         "id": "items_row_mobile",
-         "min": 1,
-         "max": 3,
-         "step": 1,
-         "label": "Item Per Row - Mobile",
-         "default": 2
-      },
-      {
-        "type": "range",
-        "id": "items_gap",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Items Gap",
-        "default": 20
-      },
-      {
-        "type": "range",
-        "id": "items_gap_mobile",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Items Gap - Mobile",
-        "default": 20
-      },
-      {
-        "type": "select",
-        "id": "items_style",
-        "label": "Items Style - Mobile",
-        "default": "stack",
-        "options": [
-          {
-            "label": "Stack Items",
-            "value": "stack"
-          },
-          {
-            "label": "Slider",
-            "value": "slider"
-          }
-        ]
-      },
-      {
-        "type": "range",
-        "id": "items_mt",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Items Margin Top",
-        "default": 0
-      },
-      {
-        "type": "range",
-        "id": "items_padding_vertical",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Items Padding Vertical",
-        "default": 0
-      },
-      {
-         "type": "range",
-         "id": "items_padding_horizontal",
-         "min": 0,
-         "max": 100,
-         "step": 4,
-         "unit": "px",
-         "label": "Items Padding Horizontal",
-         "default": 0
-      },
-      {
-         "type": "range",
-         "id": "items_radius",
-         "min": 0,
-         "max": 200,
-         "step": 2,
-         "unit": "px",
-         "label": "Items Border Radius",
-         "default": 0
-      },
-      {
-        "type": "header",
-        "content": "Image Settings"
-      },
-      {
-         "type": "range",
-         "id": "image_block_width",
-         "min": 0,
-         "max": 100,
-         "step": 5,
-         "unit": "%",
-         "label": "Image Block Width - Desktop",
-         "default": 60
-      },
-      {
-         "type": "range",
-         "id": "image_block_width_mobile",
-         "min": 0,
-         "max": 100,
-         "step": 5,
-         "unit": "%",
-         "label": "Image Block Width - Mobile",
-         "default": 60
-      },
-      {
-         "type": "range",
-         "id": "image_block_radius",
-         "min": 0,
-         "max": 200,
-         "step": 2,
-         "unit": "px",
-         "label": "Image Block Border Radius",
-         "default": 200
-      },
-      {
-         "type": "range",
-         "id": "image_width",
-         "min": 0,
-         "max": 100,
-         "step": 5,
-         "unit": "%",
-         "label": "Image Width - Desktop",
-         "default": 50
-      },
-      {
-         "type": "range",
-         "id": "image_width_mobile",
-         "min": 0,
-         "max": 100,
-         "step": 5,
-         "unit": "%",
-         "label": "Image Width - Mobile",
-         "default": 50
-      },
-      {
-        "type": "header",
-        "content": "Item Heading"
-      },
-      {
-        "type": "checkbox",
-        "id": "item_heading_custom",
-        "label": "Use Custom Font",
-        "default": false
-      },
-      {
-        "type": "font_picker",
-        "id": "Item_heading_font",
-        "label": "Item Heading Font Family",
-        "default": "josefin_sans_n4"
-      },
-      {
-        "type": "range",
-        "id": "item_heading_size",
-        "min": 0,
-        "max": 72,
-        "step": 2,
-        "unit": "px",
-        "label": "Item Heading Size",
-        "default": 22
-      },
-      {
-        "type": "range",
-        "id": "item_heading_size_mobile",
-        "min": 0,
-        "max": 72,
-        "step": 2,
-        "unit": "px",
-        "label": "Item Heading Size - Mobile",
-        "default": 18
-      },
-      {
-        "type": "range",
-        "id": "item_heading_height",
-        "min": 50,
-        "max": 200,
-        "step": 10,
-        "unit": "%",
-        "label": "Item Heading Line Height",
-        "default": 130
-      },
-      {
-        "type": "select",
-        "id": "item_heading_align",
-        "label": "Item Heading Text Align",
-        "default": "center",
-        "options": [
-          {
-            "label": "Left",
-            "value": "left"
-          },
-          {
-            "label": "Center",
-            "value": "center"
-          },
-          {
-            "label": "Right",
-            "value": "right"
-          }
-        ]
-      },
-      {
-        "type": "range",
-        "id": "item_heading_mt",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Item Heading Margin Top",
-        "default": 24
-      },
-      {
-        "type": "header",
-        "content": "Item Text"
-      },
-      {
-        "type": "checkbox",
-        "id": "item_text_custom",
-        "label": "Use Custom Font",
-        "default": false
-      },
-      {
-        "type": "font_picker",
-        "id": "Item_text_font",
-        "label": "Item Text Font Family",
-        "default": "josefin_sans_n4"
-      },
-      {
-        "type": "range",
-        "id": "item_text_size",
-        "min": 0,
-        "max": 72,
-        "step": 2,
-        "unit": "px",
-        "label": "Item Text Size",
-        "default": 14
-      },
-      {
-        "type": "range",
-        "id": "item_text_size_mobile",
-        "min": 0,
-        "max": 72,
-        "step": 2,
-        "unit": "px",
-        "label": "Item Text Size - Mobile",
-        "default": 14
-      },
-      {
-        "type": "range",
-        "id": "item_text_height",
-        "min": 50,
-        "max": 200,
-        "step": 10,
-        "unit": "%",
-        "label": "Item Text Line Height",
-        "default": 130
-      },
-      {
-        "type": "select",
-        "id": "item_text_align",
-        "label": "Item Text Text Align",
-        "default": "center",
-        "options": [
-          {
-            "label": "Left",
-            "value": "left"
-          },
-          {
-            "label": "Center",
-            "value": "center"
-          },
-          {
-            "label": "Right",
-            "value": "right"
-          }
-        ]
-      },
-      {
-        "type": "range",
-        "id": "item_text_mt",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Item Text Margin Top",
-        "default": 12
-      },
-      {
-        "type": "header",
-        "content": "Section Colors"
-      },
-      {
-        "type": "color",
-        "label": "Heading Color",
-        "id": "heading_color",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "label": "Items Background",
-        "id": "items_bg_color",
-        "default": "#FFFFFF"
-      },
-      {
-        "type": "color",
-        "label": "Item Heading Color",
-        "id": "item_heading_color",
-        "default": "#603526"
-      },
-      {
-        "type": "color",
-        "label": "Item Text Color",
-        "id": "item_text_color",
-        "default": "#603526"
-      },
-      {
-        "type": "color",
-        "label": "Pagination Color",
-        "id": "pagination_color",
-        "default": "#603526"
-      },
-      {
-        "type": "color",
-        "label": "Section background",
-        "id": "background_color",
-        "default": "#FFFFFF"
-      },
-      {
-        "type": "color_background",
-        "id": "background_gradient",
-        "label": "Section background gradient"
-      },
-      {
-        "type": "color",
-        "label": "Border",
-        "id": "border_color",
-        "default": "#000000"
-      },
-      {
-        "type": "header",
-        "content": "Section margin (outside)"
-      },
-      {
-        "type": "range",
-        "id": "margin_top",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Margin top",
-        "default": 0
-      },
-      {
-        "type": "range",
-        "id": "margin_bottom",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Margin bottom",
-        "default": 0
-      },
-      {
-        "type": "header",
-        "content": "Section padding (inside)"
-      },
-      {
-        "type": "range",
-        "id": "padding_top",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "Padding top",
-        "default": 36
-      },
-      {
-         "type": "range",
-         "id": "padding_bottom",
-         "min": 0,
-         "max": 100,
-         "step": 4,
-         "unit": "px",
-         "label": "Padding bottom",
-         "default": 36
-      },
-      {
-        "type": "range",
-        "id": "padding_horizontal",
-        "min": 0,
-        "max": 30,
-        "step": 1,
-        "unit": "rem",
-        "label": "Padding sides",
-        "default": 5
-      },
-      {
-        "type": "range",
-        "id": "padding_horizontal_mobile",
-        "min": 0,
-        "max": 15,
-        "step": 0.5,
-        "unit": "rem",
-        "label": "Padding sides mobile",
-        "default": 1.5
-      },
-      {
-        "type": "header",
-        "content": "Section Settings"
-      },
-      {
-        "type": "range",
-        "id": "content_width",
-        "min": 0,
-        "max": 400,
-        "step": 10,
-        "unit": "rem",
-        "label": "Section content width",
-        "default": 120
-      },
-      {
-        "type": "range",
-        "id": "border_thickness",
-        "min": 0,
-        "max": 50,
-        "step": 1,
-        "unit": "px",
-        "label": "Border thickness",
-        "default": 0
-      }
-    ],
-    "blocks": [
-      {
-        "type": "item",
-        "name": "Item",
-        "settings": [
-          {
-            "type": "select",
-            "id": "icon",
-            "label": "Icon",
-            "options": [
-              {
-                "value": "atc",
-                "label": "Add to cart",
-                "group": "Shop"
-              },
-              {
-                "value": "gift",
-                "label": "Gift",
-                "group": "Shop"
-              },
-              {
-                "value": "heart",
-                "label": "Heart",
-                "group": "Shop"
-              },
-              {
-                "value": "bi-ecology",
-                "label": "Ecology",
-                "group": "Shop"
-              },
-              {
-                "value": "plant",
-                "label": "Plant",
-                "group": "Shop"
-              },
-              {
-                "value": "shop",
-                "label": "Shop",
-                "group": "Shop"
-              },
-              {
-                "value": "pin",
-                "label": "Geo pin",
-                "group": "Shop"
-              },
-              {
-                "value": "megaphone",
-                "label": "Megaphone",
-                "group": "Communication"
-              },
-              {
-                "value": "chat",
-                "label": "Chat",
-                "group": "Communication"
-              },
-              {
-                "value": "chat-dots",
-                "label": "Chat w. dots",
-                "group": "Communication"
-              },
-              {
-                "value": "people",
-                "label": "Real people support",
-                "group": "Communication"
-              },
-              {
-                "value": "email",
-                "label": "Email",
-                "group": "Communication"
-              },
-              {
-                "value": "globe",
-                "label": "Globe",
-                "group": "Communication"
-              },
-              {
-                "value": "newsletter",
-                "label": "Newsletter",
-                "group": "Communication"
-              },
-              {
-                "value": "love",
-                "label": "Love",
-                "group": "Communication"
-              },
-              {
-                "value": "phone",
-                "label": "Phone",
-                "group": "Communication"
-              },
-              {
-                "value": "share",
-                "label": "Share",
-                "group": "Communication"
-              },
-              {
-                "value": "box",
-                "label": "Box",
-                "group": "Delivery"
-              },
-              {
-                "value": "worldwide",
-                "label": "Worldwide",
-                "group": "Delivery"
-              },
-              {
-                "value": "truck",
-                "label": "Truck",
-                "group": "Delivery"
-              },
-              {
-                "value": "return_arrow",
-                "label": "Return purchase",
-                "group": "Delivery"
-              },
-              {
-                "value": "time",
-                "label": "Time",
-                "group": "Delivery"
-              },
-              {
-                "value": "payment",
-                "label": "Secure payment",
-                "group": "Security"
-              },
-              {
-                "value": "mobile",
-                "label": "Lock",
-                "group": "Security"
-              },
-              {
-                "value": "shield",
-                "label": "Shield",
-                "group": "Security"
-              }
-            ],
-            "default": "time"
-          },
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Icon Image"
-          },
-          {
-            "type": "richtext",
-            "id": "heading",
-            "label": "Heading",
-            "default":"<p>Feature text</p>"
-          },
-          {
-            "type": "richtext",
-            "id": "text",
-            "label": "Text",
-            "default": "<p>Explain benefits over features.</p>"
-          },
-          {
-            "type": "header",
-            "content": "Block Colors"
-          },
-          {
-            "type": "color",
-            "label": "Image Block Background",
-            "id": "image_block_bg"
-          },
-          {
-            "type": "color",
-            "label": "Image Svg Color",
-            "info": "If you are using the Icon selector",
-            "id": "image_svg_color"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "SS - Feature #7",
-        "blocks": [
-          {
-            "type": "item",
-            "settings": {
-              "icon": "plant",
-              "heading": "<h3>Vegan</h3>",
-              "text": "<p>Our entire Chella menu is completely vegan</p>",
-              "image_block_bg": "#A6DFA9"
+{
+  "name": "SS - Feature #7",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_custom",
+      "label": "Use Custom Font",
+      "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading Font Family",
+      "default": "josefin_sans_n4"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 0,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading Size",
+      "default": 34
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "min": 0,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading Size - Mobile",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "heading_height",
+      "min": 50,
+      "max": 200,
+      "step": 10,
+      "unit": "%",
+      "label": "Heading Line Height",
+      "default": 130
+    },
+    {
+      "type": "select",
+      "id": "heading_align",
+      "label": "Heading Text Align",
+      "default": "center",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Items Settings"
+    },
+    {
+       "type": "range",
+       "id": "items_row",
+       "min": 1,
+       "max": 6,
+       "step": 1,
+       "label": "Item Per Row - Desktop",
+       "default": 4
+    },
+    {
+       "type": "range",
+       "id": "items_row_mobile",
+       "min": 1,
+       "max": 3,
+       "step": 1,
+       "label": "Item Per Row - Mobile",
+       "default": 2
+    },
+    {
+      "type": "range",
+      "id": "items_gap",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Items Gap",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "items_gap_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Items Gap - Mobile",
+      "default": 20
+    },
+    {
+      "type": "select",
+      "id": "items_style",
+      "label": "Items Style - Mobile",
+      "default": "stack",
+      "options": [
+        {
+          "label": "Stack Items",
+          "value": "stack"
+        },
+        {
+          "label": "Slider",
+          "value": "slider"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "items_mt",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Items Margin Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "items_padding_vertical",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Items Padding Vertical",
+      "default": 0
+    },
+    {
+       "type": "range",
+       "id": "items_padding_horizontal",
+       "min": 0,
+       "max": 100,
+       "step": 4,
+       "unit": "px",
+       "label": "Items Padding Horizontal",
+       "default": 0
+    },
+    {
+       "type": "range",
+       "id": "items_radius",
+       "min": 0,
+       "max": 200,
+       "step": 2,
+       "unit": "px",
+       "label": "Items Border Radius",
+       "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Image Settings"
+    },
+    {
+       "type": "range",
+       "id": "image_block_width",
+       "min": 0,
+       "max": 100,
+       "step": 5,
+       "unit": "%",
+       "label": "Image Block Width - Desktop",
+       "default": 60
+    },
+    {
+       "type": "range",
+       "id": "image_block_width_mobile",
+       "min": 0,
+       "max": 100,
+       "step": 5,
+       "unit": "%",
+       "label": "Image Block Width - Mobile",
+       "default": 60
+    },
+    {
+       "type": "range",
+       "id": "image_block_radius",
+       "min": 0,
+       "max": 200,
+       "step": 2,
+       "unit": "px",
+       "label": "Image Block Border Radius",
+       "default": 200
+    },
+    {
+       "type": "range",
+       "id": "image_width",
+       "min": 0,
+       "max": 100,
+       "step": 5,
+       "unit": "%",
+       "label": "Image Width - Desktop",
+       "default": 50
+    },
+    {
+       "type": "range",
+       "id": "image_width_mobile",
+       "min": 0,
+       "max": 100,
+       "step": 5,
+       "unit": "%",
+       "label": "Image Width - Mobile",
+       "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Item Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_heading_custom",
+      "label": "Use Custom Font",
+      "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "Item_heading_font",
+      "label": "Item Heading Font Family",
+      "default": "josefin_sans_n4"
+    },
+    {
+      "type": "range",
+      "id": "item_heading_size",
+      "min": 0,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Item Heading Size",
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "item_heading_size_mobile",
+      "min": 0,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Item Heading Size - Mobile",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "item_heading_height",
+      "min": 50,
+      "max": 200,
+      "step": 10,
+      "unit": "%",
+      "label": "Item Heading Line Height",
+      "default": 130
+    },
+    {
+      "type": "select",
+      "id": "item_heading_align",
+      "label": "Item Heading Text Align",
+      "default": "center",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "item_heading_mt",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Item Heading Margin Top",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Item Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_text_custom",
+      "label": "Use Custom Font",
+      "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "Item_text_font",
+      "label": "Item Text Font Family",
+      "default": "josefin_sans_n4"
+    },
+    {
+      "type": "range",
+      "id": "item_text_size",
+      "min": 0,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Item Text Size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "item_text_size_mobile",
+      "min": 0,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Item Text Size - Mobile",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "item_text_height",
+      "min": 50,
+      "max": 200,
+      "step": 10,
+      "unit": "%",
+      "label": "Item Text Line Height",
+      "default": 130
+    },
+    {
+      "type": "select",
+      "id": "item_text_align",
+      "label": "Item Text Text Align",
+      "default": "center",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "item_text_mt",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Item Text Margin Top",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Section Colors"
+    },
+    {
+      "type": "color",
+      "label": "Heading Color",
+      "id": "heading_color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "label": "Items Background",
+      "id": "items_bg_color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "label": "Item Heading Color",
+      "id": "item_heading_color",
+      "default": "#603526"
+    },
+    {
+      "type": "color",
+      "label": "Item Text Color",
+      "id": "item_text_color",
+      "default": "#603526"
+    },
+    {
+      "type": "color",
+      "label": "Pagination Color",
+      "id": "pagination_color",
+      "default": "#603526"
+    },
+    {
+      "type": "color",
+      "label": "Section background",
+      "id": "background_color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Section background gradient"
+    },
+    {
+      "type": "color",
+      "label": "Border",
+      "id": "border_color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Section margin (outside)"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin bottom",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Section padding (inside)"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+       "type": "range",
+       "id": "padding_bottom",
+       "min": 0,
+       "max": 100,
+       "step": 4,
+       "unit": "px",
+       "label": "Padding bottom",
+       "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "rem",
+      "label": "Padding sides",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal_mobile",
+      "min": 0,
+      "max": 15,
+      "step": 0.5,
+      "unit": "rem",
+      "label": "Padding sides mobile",
+      "default": 1.5
+    },
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 0,
+      "max": 400,
+      "step": 10,
+      "unit": "rem",
+      "label": "Section content width",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "border_thickness",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Border thickness",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "atc",
+              "label": "Add to cart",
+              "group": "Shop"
+            },
+            {
+              "value": "gift",
+              "label": "Gift",
+              "group": "Shop"
+            },
+            {
+              "value": "heart",
+              "label": "Heart",
+              "group": "Shop"
+            },
+            {
+              "value": "bi-ecology",
+              "label": "Ecology",
+              "group": "Shop"
+            },
+            {
+              "value": "plant",
+              "label": "Plant",
+              "group": "Shop"
+            },
+            {
+              "value": "shop",
+              "label": "Shop",
+              "group": "Shop"
+            },
+            {
+              "value": "pin",
+              "label": "Geo pin",
+              "group": "Shop"
+            },
+            {
+              "value": "megaphone",
+              "label": "Megaphone",
+              "group": "Communication"
+            },
+            {
+              "value": "chat",
+              "label": "Chat",
+              "group": "Communication"
+            },
+            {
+              "value": "chat-dots",
+              "label": "Chat w. dots",
+              "group": "Communication"
+            },
+            {
+              "value": "people",
+              "label": "Real people support",
+              "group": "Communication"
+            },
+            {
+              "value": "email",
+              "label": "Email",
+              "group": "Communication"
+            },
+            {
+              "value": "globe",
+              "label": "Globe",
+              "group": "Communication"
+            },
+            {
+              "value": "newsletter",
+              "label": "Newsletter",
+              "group": "Communication"
+            },
+            {
+              "value": "love",
+              "label": "Love",
+              "group": "Communication"
+            },
+            {
+              "value": "phone",
+              "label": "Phone",
+              "group": "Communication"
+            },
+            {
+              "value": "share",
+              "label": "Share",
+              "group": "Communication"
+            },
+            {
+              "value": "box",
+              "label": "Box",
+              "group": "Delivery"
+            },
+            {
+              "value": "worldwide",
+              "label": "Worldwide",
+              "group": "Delivery"
+            },
+            {
+              "value": "truck",
+              "label": "Truck",
+              "group": "Delivery"
+            },
+            {
+              "value": "return_arrow",
+              "label": "Return purchase",
+              "group": "Delivery"
+            },
+            {
+              "value": "time",
+              "label": "Time",
+              "group": "Delivery"
+            },
+            {
+              "value": "payment",
+              "label": "Secure payment",
+              "group": "Security"
+            },
+            {
+              "value": "mobile",
+              "label": "Lock",
+              "group": "Security"
+            },
+            {
+              "value": "shield",
+              "label": "Shield",
+              "group": "Security"
             }
-          },
-          {
-            "type": "item",
-            "settings": {
-              "icon": "bi-ecology",
-              "heading": "<h3>All-Natural</h3>",
-              "text": "<p>All of our ingredients are 100% natural</p>",
-              "image_block_bg": "#B7D4DA"
-            }
-          },
-          {
-            "type": "item",
-            "settings": {
-              "icon": "pin",
-              "heading": "<h3>Made in Canada</h3>",
-              "text": "<p>All items on our Chella menu are made in Canada</p>",
-              "image_block_bg": "#E7ADBA"
-            }
-          },
-          {
-            "type": "item",
-            "settings": {
-              "icon": "people",
-              "heading": "<h3>Handcrafted</h3>",
-              "text": "<p>Each product on the Chella menu is unique and handcrafted</p>",
-              "image_block_bg": "#FFCB81"
-            }
+          ],
+          "default": "time"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Icon Image"
+        },
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "Heading",
+          "default":"<p>Feature text</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Explain benefits over features.</p>"
+        },
+        {
+          "type": "header",
+          "content": "Block Colors"
+        },
+        {
+          "type": "color",
+          "label": "Image Block Background",
+          "id": "image_block_bg"
+        },
+        {
+          "type": "color",
+          "label": "Image Svg Color",
+          "info": "If you are using the Icon selector",
+          "id": "image_svg_color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "SS - Feature #7",
+      "blocks": [
+        {
+          "type": "item",
+          "settings": {
+            "icon": "plant",
+            "heading": "<h3>Vegan</h3>",
+            "text": "<p>Our entire Chella menu is completely vegan</p>",
+            "image_block_bg": "#A6DFA9"
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "icon": "bi-ecology",
+            "heading": "<h3>All-Natural</h3>",
+            "text": "<p>All of our ingredients are 100% natural</p>",
+            "image_block_bg": "#B7D4DA"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "icon": "pin",
+            "heading": "<h3>Made in Canada</h3>",
+            "text": "<p>All items on our Chella menu are made in Canada</p>",
+            "image_block_bg": "#E7ADBA"
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "heading": "<h3>Handcrafted</h3>",
+            "text": "<p>Each product on the Chella menu is unique and handcrafted</p>",
+            "image_block_bg": "#FFCB81"
+          }
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
